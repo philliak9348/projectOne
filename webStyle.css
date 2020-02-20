@@ -1,0 +1,91 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+}
+.smallText {
+    font-style: italic;
+    font-size: 15px;
+}
+ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: gray;
+    height:50px;
+}
+li {
+    padding:10px;
+    text-align: center;
+    font: white small-caps 30px;
+    border-left: solid white 3px;
+}
+.h {
+    font-variant: small-caps;
+    font-style: sans-serif blue;
+    font-size: 40px; 
+}
+.image {
+    border: 3px, lightslategrey, solid;
+    padding: 15px;
+}
+.title {
+    text-align: center;
+    font-variant: small-caps;
+}
+.collapse{
+    display:block;
+    background:white;
+    width: 75%;
+    font-size:25px;
+    font-variant:small-caps;
+    margin:0;
+    border:0;
+    text-align: right;
+    padding-right:3px;
+    padding-bottom: 3px;
+    height:50px;
+
+}
+.collapse:hover {
+    box-shadow:0 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.colInfo {
+    background-color: white;
+    width:75%;
+    font: black wrap;
+    height:100px;
+}
+.expandOne {
+    display:flex;
+    flex-direction: row;
+    align-items: flex start;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    background-color: white;
+    width:75%;
+}
+.expandTwo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    background-color: lightsalmon;
+}
+.innerBox {
+    width: 100px;
+    height: 25%;
+    border-radius:25%;
+    background:white;
+    font-variant: small-caps;
+}
+.heading {
+    text-align: center;
+}
+.boxTitle {
+    font-variant:small-caps;
+    font-size: 25px;
+}
