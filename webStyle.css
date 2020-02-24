@@ -14,13 +14,21 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
     background-color: #b7b7b7ff;
-    height:50px;
+    height:35px;
+    align-items: center;
 }
-li {
-    padding:10px;
+button {
+    background-color:#b7b7b7ff;
     text-align: center;
     font: white small-caps 30px;
     border-left: solid white 3px;
+    border-bottom: 0;
+    border-top:0;
+    border-right:0;
+    margin: 0;
+    font: 20px white small-caps;
+    border-left-color: #4c1130ff;
+    padding:5px;
 }
 .h {
     font-variant: small-caps;
@@ -38,8 +46,8 @@ img {
 }
 .collapse{
     display:block;
-    background:gray;
-    width: 75%;
+    background:#b7b7b7ff;
+    width: 100%;
     font-size:25px;
     font-variant:small-caps;
     margin:0;
@@ -52,38 +60,44 @@ img {
 
 }
 .collapse:hover {
-    background-color: black;
+    border-bottom: gray solid 1px;
 }
 .colInfo {
-    background-color: gray;
-    width:75%;
+    background-color: #b7b7b7ff;
+    width:100%;
     font: black wrap;
     height:100px;
     box-shadow:5px 5px 0px rgba(0,0,0,0.24);
 }
 .expandOne {
     display:flex;
-    flex-direction: row;
-    align-items: flex start;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease;
-    background-color: gray;
-    width:75%;
+    background-color: #b7b7b7ff;
+    width:100%;
+    box-shadow:5px 5px 0px rgba(0,0,0,0.24);
 }
-.expandTwo {
-    max-height: 0;
+.service {
+    background-color:#b7b7b7ff;
+    width:100%;
+}
+.servInfo {
+    border-right: solid #4c1130ff 3px;
+    max-width: 0;
     overflow: hidden;
-    transition: max-height 1s ease;
-    background-color: lightsalmon;
+    transition: max-width 1s ease;
+
 }
 .innerBox {
     width: 100px;
-    height: 25%;
-    border-radius:25%;
+    height:100px;
     background:white;
     font-variant: small-caps;
+    margin:100px;
 }
 .heading {
     display:flex;
