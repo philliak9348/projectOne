@@ -2,22 +2,22 @@
 <html lang= "en">
 <head>
     <title>Speech Easy</title>
-    <script type="text/javascript" src = "C:\Users\phill\IdeaProjects\CS268\Website\script.js"></script>
-    <link rel="stylesheet" href="C:\Users\phill\IdeaProjects\CS268\Website\webStyle.css">
+    <script type="text/javascript" src = "\script.js"></script>
+    <link rel="stylesheet" href="\webStyle.css">
 </head>
 <body>
 <!-- Nav -->
 <ul>
-    <li><button type = button onclick="open('C:\Users\phill\IdeaProjects\CS268\Website\main.html', _blank)">Home</button></li>
-    <li><button type = button onclick="open('C:\Users\phill\IdeaProjects\CS268\Website\about.html',_blank)">Services</button></li>
-    <li><button type = button onclick="open('C:\Users\phill\IdeaProjects\CS268\Website\about.html', _blank)">About</button></li>
-    <li><button type = button onclick="open('C:\Users\phill\IdeaProjects\CS268\Website\Contact.html',_blank)">Contact</button></li>
+    <li><button type = button onclick="open('\main.html', _blank)">Home</button></li>
+    <li><button type = button onclick="open('\about.html',_blank)">Services</button></li>
+    <li><button type = button onclick="open('\about.html', _blank)">About</button></li>
+    <li><button type = button onclick="open('\Contact.html',_blank)">Contact</button></li>
 </ul>
 <!-- End Nav  Heading -->
 <div class = heading>
-    <img src = "C:\Users\phill\IdeaProjects\CS268\Website\Jordan.svg">
+    <img src = "\Jordan.svg">
 <h1 class = h> Speech Easy </h1>
-<img src = "C:\Users\phill\IdeaProjects\CS268\Website\Jordan.svg">
+<img src = "\Jordan.svg">
 </div>
 <div class = heading>
 <p class = smallText>Speech Made Easy by Jordan Doyle ~~ FUNctional Therapy for those of all ages</p>
@@ -25,22 +25,7 @@
 </div>
 <!-- End Heading -->
 <!-- Services Block -->
-<div class = colInfo>This is info about services</div>
-<input type = button  value = "Expand" class = collapse onclick="expand('collapse1')"></input>
-<div class = expandOne id = 'expand1'>
-    <div class = service>
-    <input type = button value = "Birth to Three" id = 'collapse3' class = innerBox onclick="expand('collapse3', 'expand3')"></input>
-    <!-- <div class = 'servInfo' id = 'expand3'>New borns to children of age three are provided services designed specifically to help children with speech difficulties.
-        <button type = button class = goToPage onlclick="open('C:\Users\phill\IdeaProjects\CS268\Website\b23.html')">></button>
-    </div> -->
-</div>
-</div>
-<!-- End Services & Start Contact -->
-<div class = colInfo>This is a contact block</div>
-<input type = button id = 'collapse2' value = "Expand" class = collapse onclick="expand('collapse2', 'expand2')"></input>
-<div class = expandOne id = 'expand2'>
-    <div class = innerBox>Expand Option Contact</div> 
-</div>
+<button type = button id = 'infoButton' onclick="openInfo('infoButton', 'openThis')">Click here!</button>
+<div id = openThis class = sidebar>This will open</div>
 </body>
 </html>
-
