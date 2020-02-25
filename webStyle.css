@@ -69,17 +69,14 @@ img {
     height:100px;
     box-shadow:5px 5px 0px rgba(0,0,0,0.24);
 }
-.expandOne {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease;
-    background-color: #b7b7b7ff;
-    width:100%;
-    box-shadow:5px 5px 0px rgba(0,0,0,0.24);
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    background-color: #4c1130ff;
 }
 .service {
     background-color:#b7b7b7ff;
