@@ -3,10 +3,9 @@ html {
 }
 body {
     margin: 0;
-}
-.smallText {
-    font-style: italic;
-    font-size: 15px;
+    background-image: url("\Jordan.svg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 ul {
     list-style-type: none;
@@ -17,7 +16,7 @@ ul {
     height:35px;
     align-items: center;
 }
-button {
+li, button {
     background-color:#b7b7b7ff;
     text-align: center;
     font: white small-caps 30px;
@@ -30,79 +29,9 @@ button {
     border-left-color: #4c1130ff;
     padding:5px;
 }
-.h {
+.welcome {
     font-variant: small-caps;
-    font-style: sans-serif blue;
-    font-size: 60px; 
-}
-img {
-    border: 3px, lightslategrey, solid;
-    padding: 15px;
-    height:300px;
-}
-.title {
+    font-weight: bold;
+    font-size: 50px;
     text-align: center;
-    font-variant: small-caps;
-}
-.collapse{
-    display:block;
-    background:#b7b7b7ff;
-    width: 100%;
-    font-size:25px;
-    font-variant:small-caps;
-    margin:0;
-    border:0;
-    text-align: right;
-    padding-right:3px;
-    padding-bottom: 3px;
-    height:50px;
-    box-shadow:5px 5px 0px rgba(0,0,0,0.24);
-
-}
-.collapse:hover {
-    border-bottom: gray solid 1px;
-}
-.colInfo {
-    background-color: #b7b7b7ff;
-    width:100%;
-    font: black wrap;
-    height:100px;
-    box-shadow:5px 5px 0px rgba(0,0,0,0.24);
-}
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left:0;
-    background-color: #4c1130ff;
-}
-.service {
-    background-color:#b7b7b7ff;
-    width:100%;
-}
-.servInfo {
-    border-right: solid #4c1130ff 3px;
-    max-width: 0;
-    overflow: hidden;
-    transition: max-width 1s ease;
-
-}
-.innerBox {
-    width: 100px;
-    height:100px;
-    background:white;
-    font-variant: small-caps;
-    margin:100px;
-}
-.heading {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.boxTitle {
-    font-variant:small-caps;
-    font-size: 25px;
 }
