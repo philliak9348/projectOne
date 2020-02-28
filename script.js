@@ -1,10 +1,7 @@
-function openInf(button, div) {
-  if (document.getElementById.style.width != "250.px") {
-  document.getElementById(div).style.width = "250.px";
-  document.getElementsByTagName(body).style.marginLeft = "250.px"
+function expButton(ex) {
+  var service = document.getElementById(ex);
   }
-  else {
-    document.getElementById(div).style.width = "0.px";
-  document.getElementsByTagName(body).style.marginLeft = "0.px"
-  }
+
+function openFile(file) {
+  window.open(file);
 }

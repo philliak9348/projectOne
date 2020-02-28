@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
+
 <head>
     <title>Speech Easy</title>
-    <script type="text/javascript" src = "\projectOne\script.js"></script>
-    <link rel="stylesheet" href="\projectOne\webStyle.css">
+    <script type="text/javascript" src="\script.js"></script>
+    <link rel="stylesheet" href="webStyle.css">
 </head>
-<body>
-<!-- Nav -->
-<ul>
-    <li><button type = button onclick="location.href='\main.html'">Home</button></li>
-    <li><button type = button onclick="location.href='\about.html'">Services</button></li>
-    <li><button type = button onclick="location.href='\about.html'">About</button></li>
-    <li><button type = button onclick="location.href='\Contact.html'">Contact</button></li>
-</ul>
-<!-- Heading -->
-<div class = welcome>Welcome to Speech Easy</div>
 
+<body>
+    <!-- Nav -->
+    <ul>
+        <li><button type=button onclick="openFile('main.html')">Home</button></li>
+        <li><button type=button onclick="openFile('about.html')">Services</button></li>
+        <li><button type=button onclick="openFile('about.html')">About</button></li>
+        <li><button type=button onclick="openFile('Contact.html')">Contact</button></li>
+    </ul>
+    <!-- Heading -->
+    <div class=welcome>Welcome to Speech Easy</div>
+    <div class=outer> Services<br> Speech Easy offers a variety of services for clients of all ages. Explore our
+        services and staff to see how we can best cater you.<br><button class = expButton onclick="expand('serviceExpand')">Explore ></button>
+    <div id = "serviceExpand"class = inner>
+        <input class = service value = "Birth to Three"onclick="openService(page)"></input>
+    </div>
+    </div>
 </body>
+
 </html>

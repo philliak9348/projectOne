@@ -3,7 +3,7 @@ html {
 }
 body {
     margin: 0;
-    background-image: url("\Jordan.svg");
+    background-image: url("Jordan.svg");
     background-repeat:no-repeat;
     background-attachment:fixed;
 }
@@ -16,7 +16,7 @@ ul {
     height:35px;
     align-items: center;
 }
-li, button {
+ button {
     background-color:#b7b7b7ff;
     text-align: center;
     font: white small-caps 30px;
