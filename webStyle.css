@@ -6,16 +6,17 @@ body {
     margin: 0;
 }
 ul {
+    margin-top:30px;
     list-style-type: none;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #b7b7b7ff;
+    background-color: #3399ff;
     height:35px;
     align-items: center;
 }
  button {
-    background-color:#b7b7b7ff;
+    background-color:#3399ff;
     text-align: center;
     font: white small-caps 30px;
     border-left: solid white 3px;
@@ -29,14 +30,19 @@ ul {
 }
 .welcome {
     font-variant: small-caps;
-    font-size: 50px;
+    font-size: 150px;
+}
+.outer {
+    background-color: #3399ff;
+
 }
 #serviceExpand {
-    background-color: rosybrown;
+    background-color: #3399ff;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    height:150px;
 }
 .open {
     display:block;
@@ -45,4 +51,17 @@ ul {
 .close {
     display:none;
     overflow: hidden;
+}
+.service {
+    padding:20px;
+    border: 1px black solid;
+    border-radius:3px;
+    height:50px;
+    width:50px;
+    text-align: center;
+    word-wrap: normal;
+    background-color: white;
+}
+.emblem {
+    height:30px;
 }
