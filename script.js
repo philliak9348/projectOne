@@ -3,7 +3,6 @@ function expandSection(ex) {
   expand.classList.toggle("open");
   expand.classList.toggle("close");
 }
-
 function openFile(file) {
   window.open(file);
 }
