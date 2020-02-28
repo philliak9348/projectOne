@@ -5,4 +5,5 @@ function expandSection(ex) {
 }
 function openFile(file) {
   window.open(file);
+  
 }
