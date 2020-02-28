@@ -4,9 +4,6 @@ html {
 body {
     align-content: center;
     margin: 0;
-    background-image: url("Jordan.svg");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
 }
 ul {
     list-style-type: none;
@@ -33,4 +30,19 @@ ul {
 .welcome {
     font-variant: small-caps;
     font-size: 50px;
+}
+#serviceExpand {
+    background-color: rosybrown;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.open {
+    display:block;
+    overflow:hidden;
+}
+.close {
+    display:none;
+    overflow: hidden;
 }
