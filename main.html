@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:action="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>Speech Easy</title>
@@ -8,30 +8,32 @@
 </head>
 
 <body>
-    
-    <!-- Nav -->
 
-    <div id = nav class = panelClose>
-    <ul>
-        <li><button type=button id = 'pageButton' onclick="openFile('main.html')">Home</button></li>
-        <li><button type=button id = 'pageButton' onclick="openFile('about.html')">Services</button></li>
-        <li><button type=button id = 'pageButton' onclick="openFile('about.html')">About</button></li>
-        <li><button type=button id = 'pageButton' onclick="openFile('Contact.html')">Contact</button></li>
+    <!-- Nav -->
+    <button type = button class = navButton onclick="togglePanel('nav')">Expand</button><div id = nav class = panelClose><ul  id>
+        <li><button type=button class = 'pageButton' onclick="openFile('main.html')">Home</button></li>
+        <li><button type=button class= 'pageButton' onclick="openFile('about.html')">Services</button></li>
+        <li><button type=button class = 'pageButton' onclick="openFile('about.html')">About</button></li>
+        <li><button type=button class = 'pageButton' onclick="openFile('Contact.html')">Contact</button></li>
     </ul>
     </div>
     <!-- Heading -->
-    <div id=info class = infoFull>
-        <button type = button class = navButton onclick="expandSection('nav')">Expand</button>
-    <div class=welcome>Welcome</div><br>to<br><div class=speecheasy>Speech Easy</div>
+    <div class=welcome>Welcome<br>to</div><br><div class=speecheasy>Speech Easy</div>
     <div class=outer> <h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our
         services and staff to see how we can best cater you.
-    <div id = "serviceExpand" class = "close">
-        <button type = button class = service onclick="openFile('b23.html')">Birth to Three <img class = emblem src='pacifier.png' alt="Pacifier"></button>
+    <div id = "serviceExpand">
+        <button type = button class = service onclick="openFile('b23.html')">Birth to Three <img class = emblem src='pacifier.jpg' alt="Pacifier"></button>
         <button type = button class = service onclick="openFile('3S.html')">Three through School <img class = emblem src='book.png' alt ="School Book"></img></button>
         <button type = button class = service onclick="openFile('adult.html')">Adult<img class = emblem src='adult.png'></img></button>
         <button type = button class = service onclick="openFile('senior.html')">Senior<img class = emblem src='senior.png'></img></button>
     </div>
     </div>
-    </div>
+        <div class=outer> <h2>Contact Us</h2><br>
+            <div id = "contactExpand">
+                <div id="generalCon">General Contact:<br>Send us a message here. We look forward to hearing from you!<textarea class ="editor"></textarea><input type=form value="Email:"></input></div>
+                <div id="contactInfo">Address:<br>Phone:<br></div>
+                <div id="socialMedia">Facebook:<br>Instagram<br>LinkedIn:</div>
+            </div>
+        </div>
 </body>
 </html>

@@ -3,42 +3,54 @@ html {
 }
 body {
     margin: 0;
+    /**background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;**/
 }
 ul {
     list-style-type: none;
     align-items: center;
     display:flex;
     flex-direction: column;
+    background-color:lightblue;
 }
-#pageButton {
+button {
     display:block;
     margin:0;
     padding:0;
-
+    border:0;
+    background-color:lightblue;
 }
-#navButton{
-     background-color:#3399ff;
+.pageButton {
+    text-align:center;
+    height:30px;
+    font-size:10px;
+    border-bottom: 1px solid darkgrey;
+}
+.navButton{
      text-align: center;
-     border-bottom: 0;
-     border-top:0;
-     border-right:0;
-     margin: 0;
      font: 20px white small-caps;
 }
 .welcome {
+    text-align:center;
     font-variant: small-caps;
     font-size: 25px;
 }
 .speecheasy {
+    text-align: center;
     font-variant: small-caps;
     font-size: 50px;
 }
 .outer {
-    background-color: #3399ff;
-
+    background-color: lightblue;
+    text-align:center;
+}
+h2 {
+    font-variant:small-caps;
 }
 #serviceExpand {
-    background-color: #3399ff;
+    background-color: lightblue;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -48,7 +60,6 @@ ul {
 }
 
 .infoFull {
-    text-align:center;
     width:100%;
 }
 .panelOpen {
@@ -57,7 +68,6 @@ ul {
     width:5%;
 }
 .infoPart {
-    text-align:center;
     width:95%;
 }
 .panelClose {
@@ -76,4 +86,30 @@ ul {
 
 .emblem {
     height:50px;
+    padding:5px;
+}
+#contactExpand {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+#generalCon {
+    display:flex;
+    flex-direction:column;
+    width:200px;
+}
+#contactInfo {
+    display:flex;
+    flex-direction:column;
+    width:200px;
+}
+#socialMedia {
+    display:flex;
+    flex-direction:column;
+    width:200px;
+}
+.editor {
+    flex-grow:1;
+    flex-basis:100px;
 }

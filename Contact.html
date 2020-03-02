@@ -5,11 +5,12 @@
     <title>Contact DSC</title>
 </head>
 <body>
-    <ul>
-        <li><a href = "main.html">Home</a></li>
-        <li><a href = "about.html">Services</a></li>
-        <li><a href = "about.html">About</a></li>
-        <li><a href = "Contact.html">Contact</a></li>
-    </ul>
+<button type = button class = navButton onclick="togglePanel('nav')">Expand</button><div id = nav class = panelClose><ul  id>
+    <li><button type=button class = 'pageButton' onclick="openFile('main.html')">Home</button></li>
+    <li><button type=button class= 'pageButton' onclick="openFile('about.html')">Services</button></li>
+    <li><button type=button class = 'pageButton' onclick="openFile('about.html')">About</button></li>
+    <li><button type=button class = 'pageButton' onclick="openFile('Contact.html')">Contact</button></li>
+</ul>
+</div>
 </body>
 </html>
