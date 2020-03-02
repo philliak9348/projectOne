@@ -2,30 +2,28 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
-    align-content: center;
     margin: 0;
 }
 ul {
-    margin-top:30px;
     list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #3399ff;
-    height:35px;
     align-items: center;
+    display:flex;
+    flex-direction: column;
 }
- button {
-    background-color:#3399ff;
-    text-align: center;
-    border-left: solid white 3px;
-    border-bottom: 0;
-    border-top:0;
-    border-right:0;
-    margin: 0;
-    font: 20px white small-caps;
-    border-left-color: #4c1130ff;
-    padding:5px;
+#pageButton {
+    display:block;
+    margin:0;
+    padding:0;
+
+}
+#navButton{
+     background-color:#3399ff;
+     text-align: center;
+     border-bottom: 0;
+     border-top:0;
+     border-right:0;
+     margin: 0;
+     font: 20px white small-caps;
 }
 .welcome {
     font-variant: small-caps;
@@ -46,8 +44,11 @@ ul {
     justify-content: space-evenly;
     align-items: center;
     height:150px;
+    padding:30px
 }
+
 .infoFull {
+    text-align:center;
     width:100%;
 }
 .panelOpen {
@@ -56,6 +57,7 @@ ul {
     width:5%;
 }
 .infoPart {
+    text-align:center;
     width:95%;
 }
 .panelClose {
@@ -63,16 +65,15 @@ ul {
     overflow: hidden;
 }
 .service {
-    padding:20px;
     border: 1px black solid;
     border-radius:3px;
-    height:50px;
-    width:50px;
+    height:150px;
+    width:150px;
     text-align: center;
-    word-wrap: normal;
     background-color: white;
+    font-size: 20px;
 }
 
 .emblem {
-    height:30px;
+    height:50px;
 }

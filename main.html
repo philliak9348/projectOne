@@ -10,17 +10,18 @@
 <body>
     
     <!-- Nav -->
-    <button type = button class = navButton onclick="expandSection('nav')">Expand</button>
+
     <div id = nav class = panelClose>
     <ul>
-        <li><button type=button onclick="openFile('main.html')">Home</button></li>
-        <li><button type=button onclick="openFile('about.html')">Services</button></li>
-        <li><button type=button onclick="openFile('about.html')">About</button></li>
-        <li><button type=button onclick="openFile('Contact.html')">Contact</button></li>
+        <li><button type=button id = 'pageButton' onclick="openFile('main.html')">Home</button></li>
+        <li><button type=button id = 'pageButton' onclick="openFile('about.html')">Services</button></li>
+        <li><button type=button id = 'pageButton' onclick="openFile('about.html')">About</button></li>
+        <li><button type=button id = 'pageButton' onclick="openFile('Contact.html')">Contact</button></li>
     </ul>
     </div>
     <!-- Heading -->
     <div id=info class = infoFull>
+        <button type = button class = navButton onclick="expandSection('nav')">Expand</button>
     <div class=welcome>Welcome</div><br>to<br><div class=speecheasy>Speech Easy</div>
     <div class=outer> <h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our
         services and staff to see how we can best cater you.
