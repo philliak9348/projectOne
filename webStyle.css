@@ -45,6 +45,7 @@ button {
 .outer {
     background-color: lightblue;
     text-align:center;
+    align-content: center;
 }
 h2 {
     font-variant:small-caps;
@@ -58,7 +59,10 @@ h2 {
     height:150px;
     padding:30px
 }
-
+#notSure {
+    width: 80%;
+    background-color:white;
+}
 .infoFull {
     width:100%;
 }
