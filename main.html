@@ -10,21 +10,26 @@
 <body>
     
     <!-- Nav -->
+    <button type = button class = navButton onclick="expandSection('nav')">Expand</button>
+    <div id = nav class = panelClose>
     <ul>
         <li><button type=button onclick="openFile('main.html')">Home</button></li>
         <li><button type=button onclick="openFile('about.html')">Services</button></li>
         <li><button type=button onclick="openFile('about.html')">About</button></li>
         <li><button type=button onclick="openFile('Contact.html')">Contact</button></li>
     </ul>
+    </div>
     <!-- Heading -->
-    <div class=welcome>Welcome to Speech Easy</div>
+    <div id=info class = infoFull>
+    <div class=welcome>Welcome</div><br>to<br><div class=speecheasy>Speech Easy</div>
     <div class=outer> <h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our
-        services and staff to see how we can best cater you.<br><button class = expandSection onclick="expandSection('serviceExpand')">Explore ></button>
+        services and staff to see how we can best cater you.
     <div id = "serviceExpand" class = "close">
         <button type = button class = service onclick="openFile('b23.html')">Birth to Three <img class = emblem src='pacifier.png' alt="Pacifier"></button>
         <button type = button class = service onclick="openFile('3S.html')">Three through School <img class = emblem src='book.png' alt ="School Book"></img></button>
         <button type = button class = service onclick="openFile('adult.html')">Adult<img class = emblem src='adult.png'></img></button>
         <button type = button class = service onclick="openFile('senior.html')">Senior<img class = emblem src='senior.png'></img></button>
+    </div>
     </div>
     </div>
 </body>

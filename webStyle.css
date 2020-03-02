@@ -18,7 +18,6 @@ ul {
  button {
     background-color:#3399ff;
     text-align: center;
-    font: white small-caps 30px;
     border-left: solid white 3px;
     border-bottom: 0;
     border-top:0;
@@ -30,7 +29,11 @@ ul {
 }
 .welcome {
     font-variant: small-caps;
-    font-size: 150px;
+    font-size: 25px;
+}
+.speecheasy {
+    font-variant: small-caps;
+    font-size: 50px;
 }
 .outer {
     background-color: #3399ff;
@@ -44,11 +47,18 @@ ul {
     align-items: center;
     height:150px;
 }
-.open {
-    display:block;
-    overflow:hidden;
+.infoFull {
+    width:100%;
 }
-.close {
+.panelOpen {
+    display:block;
+    overflow: hidden;
+    width:5%;
+}
+.infoPart {
+    width:95%;
+}
+.panelClose {
     display:none;
     overflow: hidden;
 }

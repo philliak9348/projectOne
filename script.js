@@ -1,7 +1,10 @@
 function expandSection(ex) {
-  var expand = document.getElementById(ex);
-  expand.classList.toggle("open");
-  expand.classList.toggle("close");
+  var nav = document.getElementById('nav');
+  var body = document.getElementById('info')
+  nav.classList.toggle("panelOpen");
+  body.classList.toggle("infoPart");
+  nav.classList.toggle("panelClose");
+  body.classList.toggle("infoFull");
 }
 function openFile(file) {
   window.open(file);
