@@ -12,7 +12,7 @@
 <!-- Nav -->
     <ul id="nav" class = 'openMenu'>
         <li>
-            <button type = button class ='menuButton' onclick="togglePanel()"><div>&#9776</div></button>
+            <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
         </li>
         <li>
             <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
@@ -41,7 +41,15 @@
         <img src="staff.jpg" id="whoWhatImage">
     </div>
     <!-- Services -->
-    <div class=outer id="services"><h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our services and staff to see how we can best cater you.</div>
+    <div class=outer id="serviceContainer"><h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our services and staff to see how we can best cater you.
+        <button type = button id="servButton" onclick="toggleServices()">Explore Services</button>
+        <div class="servicesClose" id="services">
+            <div class="card">Birth to 21</div>
+            <div class="card">Three through School</div>
+            <div class="card">Adult</div>
+            <div class="card">Seniors</div>
+        </div>
+    </div>
 </div>
 <!-- Contact Us -->
 <div class=outer id='contact'><h2>Contact Us</h2><br>
