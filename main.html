@@ -10,8 +10,10 @@
 <body>
 
 <!-- Nav -->
-<div id=nav class=panelClose>
-    <ul id>
+    <ul id="nav" class = 'openMenu'>
+        <li>
+            <button type = button class ='menuButton' onclick="togglePanel()"><div>&#9776</div></button>
+        </li>
         <li>
             <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
         </li>
@@ -25,9 +27,8 @@
             <button type=button class='pageButton' onclick="openFile('Contact.html')">Contact</button>
         </li>
     </ul>
-</div>
 <!-- Heading -->
-<div class=title><p id="welcome">Welcome</p><br>to</div><br><p id="speecheasy">Speech Easy</p></div>
+<div class=title><!--<p id="welcome">-->Welcome <!--</p><br>-->to <p id="speecheasy">Speech Easy</p></div>
 <!-- Info-->
 <div id=scroll>
     <!--Who Are We?-->
@@ -37,7 +38,7 @@
             <div class='card'><p class="whoWhatTitle">What Do We Offer?</p><br>We offer dependant and unique services  that will cater to you or your loved one's individual needs.</div>
             <div class='card'><p class="whoWhatTitle">Who Are We?</p><br>Our clinicians and staff is made up of hard-working, skilled and welcoming people, willing to do whatever it takes to get you the necessary skills the live your life as you want.</div>
         </div>
-        <img src="findImage.jpg" id="group">
+        <img src="staff.jpg" id="whoWhatImage">
     </div>
     <!-- Services -->
     <div class=outer id="services"><h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our services and staff to see how we can best cater you.</div>

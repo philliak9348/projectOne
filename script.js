@@ -1,7 +1,8 @@
-function togglePanel(ex) {
+function togglePanel() {
   var nav = document.getElementById('nav');
-  nav.classList.toggle("panelOpen");
-  nav.classList.toggle("panelClose");
+  var navButton = document.getElementById('toggleNav')
+  nav.classList.toggle("openMenu");
+  nav.classList.toggle("closedMenu");
 }
 function openFile(file) {
   window.open(file);
