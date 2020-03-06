@@ -34,9 +34,9 @@
     <!--Who Are We?-->
     <div class="outer" id='whowhat'>
         <div id="cards">
-            <div class='card'><p class="whoWhatTitle">What Are We?</p><br>Speech Easy is a speech therapy clinic dedicated to helping those build or regain strong language skills.</div>
-            <div class='card'><p class="whoWhatTitle">What Do We Offer?</p><br>We offer dependant and unique services  that will cater to you or your loved one's individual needs.</div>
-            <div class='card'><p class="whoWhatTitle">Who Are We?</p><br>Our clinicians and staff is made up of hard-working, skilled and welcoming people, willing to do whatever it takes to get you the necessary skills the live your life as you want.</div>
+            <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">What Are We?</p><br><p class = whowhatText>Speech Easy is a speech therapy clinic dedicated to helping those build or regain strong language skills.</p></button>
+            <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">What Do We Offer?</p><br><p class = whowhatText>We offer dependant and unique services  that will cater to you or your loved one's individual needs.</p></button>
+            <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">Who Are We?</p><br><p class = whowhatText>Our clinicians and staff is made up of hard-working, skilled and welcoming people, willing to do whatever it takes to get you the necessary skills the live your life as you want.</p></button>
         </div>
         <img src="staff.jpg" id="whoWhatImage">
     </div>
@@ -44,10 +44,10 @@
     <div class=outer id="serviceContainer"><h2>Services</h2><br>Speech Easy offers a variety of services for clients of all ages. Explore our services and staff to see how we can best cater you.
         <button type = button id="servButton" onclick="toggleServices()">Explore Services</button>
         <div class="servicesClose" id="services">
-            <div class="card">Birth to 21</div>
-            <div class="card">Three through School</div>
-            <div class="card">Adult</div>
-            <div class="card">Seniors</div>
+            <button class="serviceCard" onclick="openFile('b23.html')">Birth to 21<br></button>
+            <button class="serviceCard" onclick="openFile('3S.html')">Three through School</button>
+            <button class="serviceCard" onclick="openFile('adult.html')">Adult</button>
+            <button class="serviceCard" onclick="openFile('senior.html')">Seniors</button>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
 <div class=outer id='contact'><h2>Contact Us</h2><br>
     <div id="contactExpand">
         <p>Not find what you need after exploring? Feel free to contact us with any questions you have.</p>
-        <button type=button id="contactButton" onclick="openFile('Contact.html')">Contact US!</button>
+        <button type=button id="contactButton" onclick="openFile('Contact.html')">Contact Us!</button>
     </div>
 </div>
 </body>

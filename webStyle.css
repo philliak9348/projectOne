@@ -13,6 +13,7 @@ button {
     margin:0;
     padding:0;
     border:0;
+    cursor:pointer;
 }
 .openMenu {
     position:fixed;
@@ -21,7 +22,7 @@ button {
 .closedMenu {
     position:fixed;
     right:0;
-    width:45px;
+    width:40px;
     overflow:hidden;
 }
 ul {
@@ -94,13 +95,12 @@ li {
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-items:space-around;
+    justify-items:center;
     padding:10px;
 }
 .card {
-    margin:5px;
-    margin-bottom:10px;
-    padding:5px;
+    margin:10px;
+    padding:15px;
     background-color:white;
     border:2px black solid;
     text-align:center;
@@ -115,35 +115,56 @@ li {
     padding:0;
     font-size:30px;
 }
+.whowhatText{
+    font-size:20px;
+    word-wrap:normal;
+}
 #whoWhatImage {
     border: 3px black solid;
     height:300px;
     width:auto;
     margin:30px;
 }
+h2 {
+    font-variant:small-caps;
+}
 #serviceContainer {
-    position:relative;
+    align-items:center;
 }
 #services {
-    display:flex;
-    flex-direction:column;
-
 }
 .servicesOpen {
-    position:absolute;
-    top:100%;
-    height:300px;
+  display:block;
 }
 .servicesClose{
-    height:0;
+    display:none;
     overflow:hidden;
 }
+.serviceCard{
+    cursor:pointer;
+    background-color:white;
+    border:3px black solid;
+    width:30%;
+    align-text:center;
+    padding:5px;
+    margin:15px;
+    height:100px;
+1}
+#servButton {
+    border-radius:5%;
+    border:1px black solid;
+    cursor: pointer;
+    height:40px;
+    width:100px;
+    word-wrap: no-wrap;
+    }
 #contact {
 }
 #contactButton {
     border-radius:5%;
     border:1px black solid;
     cursor: pointer;
+    word-wrap:none;
     height:30px;
-    width:50px;
+    width:100px;
 }

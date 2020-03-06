@@ -2,15 +2,25 @@
 <html>
 <head>
     <link rel="stylesheet" href="webStyle.css">
-    
+    <script type="text/javascript" src="script.js"></script>
     <title>Senior</title>
 </head>
-<body>
-<button type = button class = navButton onclick="togglePanel('nav')">Expand</button><div id = nav class = panelClose><ul  id>
-    <li><button type=button class = 'pageButton' onclick="openFile('main.html')">Home</button></li>
-    <li><button type=button class= 'pageButton' onclick="openFile('about.html')">Services</button></li>
-    <li><button type=button class = 'pageButton' onclick="openFile('about.html')">About</button></li>
-    <li><button type=button class = 'pageButton' onclick="openFile('Contact.html')">Contact</button></li>
+<ul id="nav" class = 'openMenu'>
+    <li>
+        <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('about.html')">Services</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('Contact.html')">Contact</button>
+    </li>
 </ul>
 </div>
 </body>

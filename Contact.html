@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="webStyle.css">
+    <link rel="stylesheet" href="contactStyle.css">
+    <script type="text/javascript" src="script.js"></script>
     <title>Contact DSC</title>
 </head>
 <body>
 <header>
-    <ul>
-        <li><button type=button class = 'pageButton' onclick="openFile('main.html')">Home</button></li>
-        <li><button type=button class= 'pageButton' onclick="openFile('about.html')">Services</button></li>
-        <li><button type=button class = 'pageButton' onclick="openFile('about.html')">About</button></li>
-        <li><button type=button class = 'pageButton' onclick="openFile('Contact.html')">Contact</button></li>
+    <ul id="nav" class = 'openMenu'>
+        <li>
+            <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
+        </li>
+        <li>
+            <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+        </li>
+        <li>
+            <button type=button class='pageButton' onclick="openFile('about.html')">Services</button>
+        </li>
+        <li>
+            <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+        </li>
+        <li>
+            <button type=button class='pageButton' onclick="openFile('Contact.html')">Contact</button>
+        </li>
     </ul>
 </header>
 </div>
 <div id="scroll">
     <h2>Contact Us!</h2>
     <textarea class="editor"></textarea><br>Email:<input type = text>
-
+</div>
+<div id = "info">
+    1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138<br>555-1294
 </div>
 </body>
 </html>
