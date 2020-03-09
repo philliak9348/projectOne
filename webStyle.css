@@ -58,6 +58,9 @@ li {
     border-left: 1px white solid;
     padding-left: 5px;
 }
+button:hover {
+    background-color:gray;
+}
 #scroll {
     display:flex;
     flex-direction:column;
