@@ -31,7 +31,7 @@ ul {
     flex-direction:row;
     height:60px;
     width:320px;
-    background-color:#3366cc;
+    background-color: #666699;
     justify-content:flex-start;
     padding:0;
 }
@@ -39,13 +39,13 @@ li {
     padding:5px;
     height:20px;
     border-left; 1px black solid;
-    background-color:#3366cc;
+    background-color: #666699;
 }
 .menuButton {
     text-align:center;
     color:white;
     font-size:20px;
-    background-color:#3366cc;
+    background-color: #666699;
     padding-left:5px;
     padding-right:3px;
 }
@@ -54,7 +54,7 @@ li {
     height:30px;
     color: white;
     font-size:15px;
-    background-color:#3366cc;
+    background-color: #666699;
     border-left: 1px white solid;
     padding-left: 5px;
 }
@@ -62,30 +62,35 @@ li {
     display:flex;
     flex-direction:column;
     align-items: space-around;
-    justify-content: center;
+    justify-content: space-around;
 }
 .title {
-    margin-top:30px;
-    pading-top:30px;
+    background-color:white;
+    margin:auto;
     text-align:center;
     font-variant:small-caps;
+    width:90%;
+    align-content:center;
 }
 #welcome {
     font-size: 35px;
 }
 #speecheasy {
-    font-size: 50px;
+    font-size: 60px;
     padding:0;
     margin:0;
 }
 .outer {
-    width:75%;
-    margin:30px;
-    margin-left:0;
+    width:90%;
+    margin:auto;
+    margin-top:30px;
     padding:10px;
-    background:#99ccff;
+    align-items: center;
+    text-align:center;
+    padding:30px;
 }
 #whowhat {
+background-color: #f0f0f5;
     display:flex;
     flex-direction:row;
     justify-content;space-around;
@@ -105,7 +110,7 @@ li {
     border:2px black solid;
     text-align:center;
     word-wrap: normal;
-    border-radius:5%;
+    border-radius:25px;
     flex-grow:1;
     width:auto;
 }
@@ -121,8 +126,8 @@ li {
 }
 #whoWhatImage {
     border: 3px black solid;
-    height:300px;
-    width:auto;
+    height:400px;
+    width:1000px;
     margin:30px;
 }
 h2 {
@@ -130,41 +135,77 @@ h2 {
 }
 #serviceContainer {
     align-items:center;
+    background-color: #3385ff;
+    display:flex;
+    flex-direction:row;
+    align-items:space-around;
+    justify-content:space-around;
 }
 #services {
 }
 .servicesOpen {
   display:block;
+  display:flex;
+  flex-direction:row;
+  height:300px;
 }
 .servicesClose{
     display:none;
     overflow:hidden;
 }
 .serviceCard{
-    cursor:pointer;
-    background-color:white;
-    border:3px black solid;
-    width:30%;
-    align-text:center;
+    width:25%;
     padding:5px;
     margin:15px;
+    height:200px;
+    background:white;
+    align-items:center;
+    border:3px black solid;
+    border-radius:5px;
+}
+.exploreService {
+    background-color:white;
+    border-radius:3px;
+    border:1px black solid;
+    padding:3px;
+}
+img {
     height:100px;
-1}
+    width:auto;
+}
 #servButton {
-    border-radius:5%;
+    border-radius:25px;
     border:1px black solid;
     cursor: pointer;
-    height:40px;
-    width:100px;
+    height:60px;
+    width:120px;
     word-wrap: no-wrap;
+    font-variant:small-caps;
+    font-weight:bold;
+    font-size:15px;
     }
 #contact {
+    background-color: #ccccff;
+    display:flex;
+    flex-direction:row;
+    align-items:space-around;
+    justify-content:space-around;
 }
 #contactButton {
-    border-radius:5%;
+    border-radius:25px;
     border:1px black solid;
     cursor: pointer;
     word-wrap:none;
-    height:30px;
-    width:100px;
+    height:50px;
+    width:120px;
+    font-variant:small-caps;
+    font-style:bold;
+    font-size:15px;
+}
+#info {
+    background-color:#999999;
+    width:100%;
+    margin:0;
+    padding:30px;
+
 }
