@@ -20,6 +20,8 @@
 #Jordyn {
     height:450px;
     width:auto;
+    border-left:#98042d solid 5px;
+    border-right:5px #98042d solid;
 }
 figcaption {
     font-variant:small-caps;
@@ -58,4 +60,6 @@ figcaption {
     max-height:350px;
     width:250px;
     margin:15px;
+    border-left:5px #98042d solid;
+    border-right:5px #98042d solid;
 }
