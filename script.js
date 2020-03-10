@@ -10,6 +10,11 @@ function toggleServices() {
   service.classList.toggle("servicesClose");
   service.classList.toggle("servicesOpen");
 }
+function togglePopup() {
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('showPopup');
+    popup.classList.toggle('hidePopup');
+}
 function openFile(file) {
   window.open(file);
 }

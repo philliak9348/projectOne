@@ -3,40 +3,38 @@
     flex-basis:100px;
 }
 .root {
+    width:80%;
+    margin:auto;
     display:flex;
     flex-direction:row;
-    justify-content:center;
-    align-items:space-between;
-    background-color:#e1e2e7;
-}
-#info {
-    border-top:1px black solid;
-    text-align:center;
-    font-style:italic;
+    justify-content:flex-start;
+    align-items:center;
 }
 .whyContactUs {
     word-wrap:normal;
-    align-contact:center;
+    text-align:center;
+    width:80%;
+    margin:auto;
+    padding:30px;
 }
 form {
     padding:30px;
     margin:30px;
     font-size:25px;
 }
-option {
-    height:30px;
+.contactInfoContainer {
+    white-space:pre;
 }
-
 .contactInfo {
+    text-align:center;
     display:flex;
     flex-direction:row;
     align-items:space-around;
     justify-content:center;
 }
-#address, #emails {
+#address, #emails, #callPhone {
     border-bottom:3px solid #98042d;
 }
-
 .socialIcon {
     width:50px;
     height:auto;
@@ -56,4 +54,46 @@ option {
 }
 .socialIcon:hover > .tooltip {
     visibility:visible;
+}
+#info {
+    border-top:1px black solid;
+    text-align:center;
+    font-style:italic;
+}
+#popup {
+    background-color:#fcc0c5;
+    border:5px black solid;
+    border-radius:5px;
+    position:fixed;
+    top:25%;
+    bottom:50%;
+    left:25%;
+    right:25%;
+    text-align:center;
+    font-size:30px;
+    padding:30px;
+}
+.popupButtons {
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:center;
+}
+#goHome, #stay {
+    height:100px;
+    width:150px;
+    font-variant:small-caps;
+    border-left:2px black solid;
+    border-right:2px black solid;
+    text-align:center;
+    padding:10px;
+    margin:30px;
+}
+.showPopup {
+    visibility:visible;
+
+}
+.hidePopup {
+    visibility:hidden;
+    overflow:hidden;
 }
