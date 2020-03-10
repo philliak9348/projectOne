@@ -47,13 +47,13 @@
 .card {
     margin:10px;
     padding:15px;
-    border:2px black solid;
     background-color:#c6c8d2;
     text-align:center;
     word-wrap: normal;
-    border-radius:25px;
     flex-grow:1;
     width:auto;
+    border-left:black 3px solid;
+    border-right:black 3px solid;
 }
 .whoWhatTitle {
     font-variant: small-caps;
@@ -76,6 +76,8 @@ h2 {
 }
 #serviceContainer {
     align-items:center;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 .speech {
     display:flex;
@@ -85,6 +87,7 @@ h2 {
     font-size:20px;
 }
 #services {
+    padding-top:100px;
 }
 .servicesOpen {
   display:block;
@@ -103,30 +106,25 @@ h2 {
     height:200px;
     background:#c4dbe0;
     align-items:center;
-    border:3px black solid;
-    border-radius:5px;
-}
-.exploreService {
-    background-color:white;
-    border-radius:3px;
-    border:1px black solid;
-    padding:3px;
+    border-left:black 3px solid;
+    border-right:black 3px solid;
 }
 img {
     height:100px;
     width:auto;
 }
-#servButton {
-    border-radius:25px;
-    border:1px black solid;
+.exploreButton {
+    border-left:black 3px solid;
+    border-right:black 3px solid;
     cursor: pointer;
-    height:60px;
-    width:120px;
-    word-wrap: no-wrap;
+    word-wrap:none;
+    height:100px;
+    width:200px;
     font-variant:small-caps;
-    font-weight:bold;
+    font-style:bold;
     font-size:15px;
     background-color:#c6c8d2;
+    font-size:30px;
     }
 #servButton:hover {
     background-color:#e1e2e7;
@@ -138,23 +136,10 @@ img {
     justify-content:space-around;
     margin-bottom:160px;
     font-size:20px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
-#contactButton {
-    border-radius:25px;
-    border:1px black solid;
-    cursor: pointer;
-    word-wrap:none;
-    height:100px;
-    width:150px;
-    font-variant:small-caps;
-    font-style:bold;
-    font-size:15px;
-    background-color:#c6c8d2;
-    display:flex;
-    flex-direction:column;
-    align-items:space-around;
-    justify-content:space-around;
-}
+
 #contactButton:hover {
     background-color:#e1e2e7;
 }
@@ -172,4 +157,11 @@ img {
     left:0;
     text-align:center;
     margin-top:30px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+}
+.addressPhone {
+    text-align:center;
 }

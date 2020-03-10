@@ -4,8 +4,8 @@
 <head>
     <title>Speech Easy</title>
     <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="webStyle.css">
     <link rel="stylesheet" href="globalStyle.css">
+    <link rel="stylesheet" href="webStyle.css">
 </head>
 
 <body>
@@ -48,8 +48,8 @@
         <img src="emblem.svg" id="whoWhatImage">
     </div>
     <!-- Services -->
-    <div class=outer id="serviceContainer"><div class="speech">Speech Easy offers a variety of services for clients of all ages. Explore our services and staff to see how we can best cater you.
-        <button type = button id="servButton" onclick="toggleServices()">Explore Services</button></div>
+    <div class=outer id="serviceContainer"><div class="speech">Speech Easy offers a variety of services for clients of all ages.<br>Explore our services and staff to see how we can best cater you.<br>Select the age group that fits you and see what we can offer you.
+        <button type = button class = 'exploreButton' onclick="toggleServices()">Explore Services</button></div>
         <div class="servicesClose" id="services">
             <button class="serviceCard"onclick="openFile('b23.html')"><h4>Birth to 2</h4><img src="baby.png" alt="Baby"></button>
             <button class="serviceCard"onclick="openFile('3S.html')"><h4>Three through School</h4><img src="school.png" alt="School"></button>
@@ -58,12 +58,16 @@
         </div>
     </div>
 <!-- Contact Us -->
-<div class=outer id='contact'><img id = 'contactImage' src="contactus.png" alt="Contact Us Icon"><button type=button id="contactButton" onclick="openFile('Contact.html')">Contact Us!</button><p>Not find what you need after exploring? Feel free to contact us with any questions you have.</p>
+<div class=outer id='contact'><button type=button class = 'exploreButton'onclick="openFile('Contact.html')">Contact Us!</button><p>Not finding what you need when exploring our website?<br>Please contact us with any questions you have.</p>
     </div>
 </div>
 <!--Footer-->
+
 <div class="bottomBar">
-    1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138<br>555-1294
+    <div class="icon">
+        <button type = button><img src="emblem.svg" alt="Speech Easy Icon"></button>
+    </div>
+    <div class="addressPhone">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138<br>555-1294</div>
 </div>
 </body>
 </html>

@@ -5,9 +5,6 @@ body {
     margin: 0;
     margin-top:30px;
     background-color:#bf4c41;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100%;
     position:relative;
 }
 button {
@@ -35,26 +32,7 @@ ul {
     width:320px;
     background-color:#98042d;
     justify-content:flex-start;
-}
-.dropdown {
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    top: 100%;
-    left: 0;
-    background-color:#98042d;
-    display:flex;
-    flex-direction:column;
-    display:none;
-}
-li {
-    height:40px;
-    border-left; 1px white solid;
-    background-color:#98042d;
-    margin:auto;
-    text-align:center;
-    color:white;
+    font-variant:small-caps;
 }
 #navService {
     position:relative;
@@ -71,6 +49,39 @@ li {
 }
 #navService:hover > .dropdown {
   display: block;
+  margin:0;
+  padding:0;
+  white-space: nowrap;
+}
+.dropdown {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    background-color:#98042d;
+    display:flex;
+    flex-direction:column;
+    display:none;
+    white-space:nowrap;
+}
+li {
+    height:40px;
+    border-left; 1px white solid;
+    background-color:#98042d;
+    margin:auto;
+    text-align:center;
+    color:white;
+    font-variant:small-caps;
+}
+.dropService {
+    padding-top:3px;
+    margin:0;
+    color:white;
+    background-color:#98042d;
+    align-text:center;
+    padding:0;
 }
 .menuButton {
     font-size:25px;
@@ -92,6 +103,9 @@ li {
     background-color:#98042d;
     color:white;
     text-align:center;
+    width:100%;
+    white-space: nowrap;
+    font-variant:small-caps;
 
 }
 button:hover {
