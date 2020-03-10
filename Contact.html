@@ -32,10 +32,48 @@
         </li>
     </ul>
 </header>
+<div class="root">
+<div class="whyContactUs">
+
 </div>
-<div id="scroll">
-    <h2>Contact Us!</h2>
-    <textarea class="editor"></textarea><br>Email:<input type = text>
+    <form>
+        Get the process started! Fill out the below survey, so you can be contacted by the staff member with the best fit for you!<br>
+        <label for="contactName">Your Name:</label>
+        <input type = 'text' id="contactName"><br>
+        <label for="clientName">Name of Client (Leave blank if you are the client):</label>
+        <input type = 'text' id="clientName"><br>Age of Client:
+        <select id="ages" name="Age of Client">
+            <option value="infant" selected>Newborn through Three</option>
+            <option value="under10">Four to Ten</option>
+            <option value="under18">11 through 18</option>
+            <option value="under30">19 to 30</option>
+            <option value="under40">30 to 40</option>
+            <option value="under50">40 to 50</option>
+            <option vaue="under60">50 to 60</option>
+            <option value="60Plus">60+</option>
+        </select><br>
+        <label for="email">Email:</label>
+        <input type = 'text' id="email"><br>
+        <label for="phone">Phone:</label>
+        <input type = 'text' id="phone"><br>
+        <input type = 'submit' value="Submit">
+    </form>
+    <div class="contactInfoContainer">
+        <div class="contactInfo" id="address">
+            <p>1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138<br>555-1294</p>
+        </div>
+        <div class="contactInfo" id="emails">
+            <p>Questions about an Appointment?<br>appointmentHelp@speecheasy.org<br><br>General Contact<br>generalContact@speechEasy.org</p>
+        </div>
+        <div class="contactInfo" id="social">
+            <img class="socialIcon" id="facebook" src="facebook.png">
+            <div class="toolTip" id="facebookTip">Not Available Yet</div>
+            <img class="socialIcon" id="instagram" src="instagram.png">
+            <div class="toolTip" id="instagramTip">Not Available Yet</div>
+            <img class="socialIcon" id="linkedin" src="linkedin.png">
+            <div class="toolTip" id="linkedinTip">Not Available Yet</div>
+        </div>
+    </div>
 </div>
 <div id = "info">
 

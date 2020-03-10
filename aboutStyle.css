@@ -45,7 +45,7 @@ figcaption {
     flex-direction:column;
     align-content: space-around;
     justify-content:space-around;
-
+    padding:20px;
 }
 .staffMember {
     display:flex;
