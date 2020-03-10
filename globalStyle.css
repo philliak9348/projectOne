@@ -69,11 +69,6 @@ li {
     padding-left: 5px;
 
 }
-#dropService {
-    background-color:#98042d;
-    color:white;
-    text-align:center;
-}
 #navService:hover > .dropdown {
   display: block;
 }
@@ -92,6 +87,12 @@ li {
     background-color:#98042d;
     border-left: 1px white solid;
     padding-left: 5px;
+}
+#dropService {
+    background-color:#98042d;
+    color:white;
+    text-align:center;
+
 }
 button:hover {
     background-color:#e1e2e7;

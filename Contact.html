@@ -8,15 +8,21 @@
 </head>
 <body>
 <header>
-    <ul id="nav" class = 'openMenu'>
+    <ul id="nav" class = 'closedMenu'>
         <li>
             <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
         </li>
         <li>
             <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
         </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('about.html')">Services</button>
+        <li id="navService">Services
+            <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
+            <ul class="dropdown">
+                <li><button class="dropService"onclick="openFile('b23.html')">Birth to 2</button></li>
+                <li><button class="dropService"onclick="openFile('3S.html')">Three through School</button></li>
+                <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
+                <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
+            </ul>
         </li>
         <li>
             <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
