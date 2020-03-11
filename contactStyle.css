@@ -2,6 +2,15 @@
     flex-grow:1;
     flex-basis:100px;
 }
+.whyContactUs {
+    word-wrap:normal;
+    text-align:center;
+    width:80%;
+    margin:auto;
+    margin-bottom:30px;
+    padding:50px;
+    background-color:#fcc0c5;
+}
 .root {
     width:80%;
     margin:auto;
@@ -9,12 +18,7 @@
     flex-direction:row;
     justify-content:flex-start;
     align-items:center;
-}
-.whyContactUs {
-    word-wrap:normal;
-    text-align:center;
-    width:80%;
-    margin:auto;
+    background-color:#fcc0c5;
     padding:30px;
 }
 form {
@@ -61,12 +65,12 @@ form {
     font-style:italic;
 }
 #popup {
-    background-color:#fcc0c5;
+    background-color:#98042d;
     border:5px black solid;
     border-radius:5px;
     position:fixed;
     top:25%;
-    bottom:50%;
+    bottom:40%;
     left:25%;
     right:25%;
     text-align:center;
