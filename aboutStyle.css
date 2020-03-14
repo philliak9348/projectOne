@@ -17,8 +17,20 @@
     border-right:5px black solid;
     border-left:5px black solid;
 }
+#JordynandStaff {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-content:center;
+}
 #Jordyn {
-    height:450px;
+    height:400px;
+    width:auto;
+    border-left:#98042d solid 5px;
+    border-right:5px #98042d solid;
+}
+#Staff {
+    height:350px;
     width:auto;
     border-left:#98042d solid 5px;
     border-right:5px #98042d solid;
@@ -29,10 +41,10 @@ figcaption {
 .aboutBody {
     text-indent:50px;
     line-height:60px;
-    font-size:30px;
+    font-size:20px;
 }
 #staffContainer {
-    background-color:
+    background-color:#e1e2e7;
 }
 .staffTitle {
     font-variant:all-caps;
@@ -52,7 +64,7 @@ figcaption {
     flex-direction:row;
     justify-content:flex-start;
     align-content:center;
-    font-size:30px;
+    font-size:20px;
     word-wrap:normal;
     text-align:center;
 }

@@ -2,7 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" href="contactStyle.css">
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="globalStyle.css">
     <title>Contact DSC</title>
 </head>
@@ -42,12 +41,18 @@
     <input type = button value="U+2BC66" onclick="toggleForm()"></input>
 </div>
     <div class="root">
-    <form>
-        Get the process started! Fill out the below survey, so you can be contacted by the staff member that best fits you!<br>
-        <label for="contactName">Your Name:</label>
-        <input type = 'text' id="contactName" required><br>
-        <label for="clientName">Name of Client (Leave blank if you are the client):</label>
-        <input type = 'text' id="clientName"><br>Age of Client:
+        <form id="contactForm">
+            <p id="instruction">Get the process started! Fill out the below survey, so you can be contacted by the staff member that best fits you!</p><br>
+        <label for="contactFName">Name of Contactee -> First: </label>
+        <input type = 'text' id="contactFName" required>
+        <label for="contactLName">Last Name: </label>
+        <input type = 'text' id="contactLName" required><br>
+        <label for="contactIsClient">Is the contactee the client?</label>
+        <input type = "checkbox" id="contactIsClient"><br>
+        <label for="clientFName">Name of Client (Leave blank if you are the client) -> First:</label>
+        <input type = 'text' id="clientFName">
+        <label for="clientLName">Last:</label>
+        <input type = 'text' id="clientLName"><br>Age of Client:
         <select id="ages" name="Age of Client" required>
             <option value="infant" selected>Newborn through Three</option>
             <option value="under10">Four to Ten</option>
@@ -62,7 +67,7 @@
         <input type = 'text' id="email" required><br>
         <label for="phone">Phone:</label>
         <input type = 'text' id="phone"><br>
-        <input type = 'submit' value="Submit" onclick="togglePopup()">
+        <input type = 'submit' id= "submitButton" value="Submit" onclick="togglePopup()">
     </form>
     <div class="contactInfoContainer">
         <div class="contactInfo" id="callPhone"><p>Call us Directly!<br>555-1294</p></div>
@@ -78,7 +83,6 @@
         </div>
     </div>
 </div>
-</div>
 <div class="hidePopup" id="popup">
     Thank you for contacting us! We will contact you via the email you provided by the end of tomorrow's
     business day. Do you want to return to the Home page or stay here?<br>
@@ -92,5 +96,6 @@
 <div id = "info">
     1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138<br>555-1294
 </div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
