@@ -17,18 +17,28 @@
     left:50px;
 }
 .info {
-    background-color:#98042d;
-    list-style-type:disc;
-    word-wrap:normal;
-    display:inline-block;
-    background-color:#98042d;
+    display:block;
+    background-color:white;
+    overflow:auto;
+    white-space:normal;
+    overflow:visible;
+    padding:15px;
+    height:500px;
 }
 #singleInfo {
     position:absolute;
     left:40%;
-
 }
 #groupInfo {
     position:absolute;
     right:50px;
+}
+.bullet {
+    padding:10px;
+    margin:10px 0;
+    height:200px;
+}
+figcaption {
+    text-align:center;
+    font-variant:small-caps;
 }
