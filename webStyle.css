@@ -160,6 +160,7 @@ img {
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
+    height:20px;
 }
 .addressPhone {
     text-align:center;
