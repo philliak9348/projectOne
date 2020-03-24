@@ -1,0 +1,12 @@
+#servicesSpecific {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content:space-between;
+}
+.serviceImage {
+    height:300px;
+    width:auto;
+    margin:100px;
+
+}
