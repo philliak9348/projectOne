@@ -19,6 +19,7 @@ function toggleServices() {
 function togglePopup() {
     var popup = document.getElementById('popup');
     popup.classList.toggle('showPopup');
+    document.getElementById("contactForm").reset();
     popup.classList.toggle('hidePopup');
 }
     var clientIdCheckbox = document.getElementById("contactIsClient");

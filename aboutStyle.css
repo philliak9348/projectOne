@@ -20,7 +20,7 @@
 #JordynandStaff {
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:center;
     align-content:center;
 }
 #Jordyn {
@@ -30,7 +30,7 @@
     border-right:5px #98042d solid;
 }
 #Staff {
-    height:350px;
+    height:250px;
     width:auto;
     border-left:#98042d solid 5px;
     border-right:5px #98042d solid;

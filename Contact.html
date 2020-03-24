@@ -17,7 +17,7 @@
         <li id="navService">Services
             <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
             <ul class="dropdown">
-                <li><button class="dropService"onclick="openFile('beoreSchool.html')">Birth to Schhol-Age</button></li>
+                <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
                 <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
                 <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
                 <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
@@ -43,16 +43,16 @@
         <form id="contactForm">
             <p id="instruction">Get the process started! Fill out the below survey, so you can be contacted by the staff member that best fits you!</p><br>
         <label for="contactFName">Your Name -> First: </label>
-        <input type = 'text' id="contactFName" required>
+        <input type = 'text' id="contactFName">
         <label for="contactLName">Last Name: </label>
-        <input type = 'text' id="contactLName" required><br>
+        <input type = 'text' id="contactLName"><br>
         <label for="contactIsClient">Are you the client?</label>
         <input type = "checkbox" id="contactIsClient"><br>
         <label for="clientFName">Name of Client -> First:</label>
         <input type = 'text' id="clientFName">
         <label for="clientLName">Last:</label>
         <input type = 'text' id="clientLName"><br>Age of Client:
-        <select id="ages" name="Age of Client" required>
+        <select id="ages" name="Age of Client">
             <option value="infant" selected>Newborn through 5</option>
             <option value="under10">5 to Ten</option>
             <option value="under18">11 through 18</option>
@@ -63,10 +63,10 @@
             <option value="60Plus">60+</option>
         </select><br>
         <label for="email">Email:</label>
-        <input type = 'text' id="email" required><br>
+        <input type = 'text' id="email"><br>
         <label for="phone">Phone:</label>
         <input type = 'text' id="phone"><br>
-        <input type = 'submit' id= "submitButton" value="Submit" onclick="togglePopup()">
+        <input type = 'button' id= "submitButton" value="Submit" onclick="togglePopup()">
     </form>
     <div class="contactInfoContainer">
         <div class="contactInfo" id="callPhone"><p>Call us Directly!<br>555-1294</p></div>
