@@ -1,12 +1,34 @@
 #servicesSpecific {
     display:flex;
     flex-direction:row;
-    justify-content:center;
-    align-content:space-between;
+   justify-content:space-between;
+   width:100%;
+   background-color:white;
+   padding:10px;
+   height:400px;
 }
 .serviceImage {
+    padding:30px;
     height:300px;
     width:auto;
-    margin:100px;
+}
+#telepracticeInfo {
+    position:absolute;
+    left:50px;
+}
+.info {
+    background-color:#98042d;
+    list-style-type:disc;
+    word-wrap:normal;
+    display:inline-block;
+    background-color:#98042d;
+}
+#singleInfo {
+    position:absolute;
+    left:40%;
 
+}
+#groupInfo {
+    position:absolute;
+    right:50px;
 }
