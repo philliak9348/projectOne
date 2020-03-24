@@ -32,7 +32,6 @@ ul {
     width:320px;
     background-color:#98042d;
     justify-content:flex-start;
-    font-variant:small-caps;
 }
 #navService {
     position:relative;
@@ -73,7 +72,6 @@ li {
     margin:auto;
     text-align:center;
     color:white;
-    font-variant:small-caps;
 }
 .dropService {
     padding-top:3px;
@@ -105,7 +103,6 @@ li {
     text-align:center;
     width:100%;
     white-space: nowrap;
-    font-variant:small-caps;
 
 }
 button:hover {
