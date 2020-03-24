@@ -107,3 +107,8 @@ form {
     visibility:hidden;
     overflow:hidden;
 }
+h1 {
+    text-align:center;
+    font-variant:small-caps;
+    font:30px black;
+}
