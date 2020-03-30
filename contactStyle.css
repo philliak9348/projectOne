@@ -30,7 +30,9 @@ form {
     margin:30px;
     font-size:15px;
     line-height:30px;
-    background-color:white;
+    background-color:#c6c8d2;
+    border-left: #98042d solid 5px;
+    border-right: #98042d solid 5px;
 }
 .contactInfoContainer {
     white-space:pre;
@@ -70,7 +72,8 @@ form {
     text-align:center;
     font-style:italic;
 }
-#popup {
+#popup, #parentPopup {
+    font-family: 'Marvel';font-size: 25px;
     background-color:#98042d;
     border:5px black solid;
     border-radius:5px;
@@ -89,10 +92,10 @@ form {
     align-items:flex-start;
     justify-content:center;
 }
-#goHome, #stay {
+#goHome, #stay, #close {
+    font-family: 'Marvel';font-size: 25px;
     height:100px;
     width:150px;
-    font-variant:small-caps;
     border-left:2px black solid;
     border-right:2px black solid;
     text-align:center;

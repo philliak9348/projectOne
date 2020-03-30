@@ -25,7 +25,7 @@ input {
 }
 #login, #cancel {
     margin:10px;
-    font-family: 'Marvel';font-size: 22px;
+    font-family: 'Marvel';font-size: 25px;
     height:30px;
     width:80px;
     border-left:solid black 3px;
@@ -109,7 +109,7 @@ input {
     align-items: center;
     text-align:center;
     padding:30px;
-    background-color:#fcc0c5;
+    background-color:#C66C49;
 }
 #whowhat {
     display:flex;
@@ -127,7 +127,7 @@ input {
 .card {
     margin:10px;
     padding:15px;
-    background-color:#c6c8d2;
+    background-color:#F5D6AB;
     text-align:center;
     word-wrap: normal;
     flex-grow:1;
