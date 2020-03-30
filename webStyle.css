@@ -1,3 +1,83 @@
+body {
+    overflow:scroll;
+}
+input {
+    height:30px;
+    width:150px;
+}
+#signInPopup {
+    font-family: 'Marvel';font-size: 22px;
+    position:fixed;
+    text-align:center;
+    right:50px;
+    top:150px;
+    height:300px;
+    width:250px;
+    border: black solid 3px;
+    background-color: #c6c8d2;
+    padding:15px;
+    font-size:25px;
+}
+#signInButtons {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+#login, #cancel {
+    margin:10px;
+    font-family: 'Marvel';font-size: 22px;
+    height:30px;
+    width:80px;
+    border-left:solid black 3px;
+    border-right:solid black 3px;
+}
+.hidePopup {
+    visibility:hidden;
+    overflow:hidden;
+}
+.showPopup {
+    visibility:visible;
+}
+/**
+#signInPopup {
+    font-family: 'Marvel';font-size: 22px;
+    position:relative;
+    text-align:center;
+    border: black solid 3px;
+    background-color: #c6c8d2;
+    padding:15px;
+    font-size:25px;
+    animation-name: leftSwipe;
+    animation-duration:4s;
+    animation-fill-mode: forwards;
+}
+.hidePopup {
+    animation-play-state:paused;
+    visibility:hidden;
+    overflow:hidden;
+}
+.showPopup {
+    animation-play-state:running;
+    visibility:visible;
+}
+#signInButtons {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+#login, #cancel {
+    margin:10px;
+    font-family: 'Marvel';font-size: 22px;
+    height:30px;
+    width:80px;
+    border-left:solid black 3px;
+    border-right:solid black 3px;
+}
+@keyframes leftSwipe {
+   from { left: 100%; top: 20px; width:20px; height:30px;}
+    to {left: 80%; top: 150px; height:300px; width:250px;}
+}
+**/
 #scroll {
     display:flex;
     flex-direction:column;
@@ -146,21 +226,6 @@ img {
 #contactImage {
     height:75px;
     width:100px;
-}
-.bottomBar{
-    background-color:#98042d;
-    width:100%;
-    padding:30px;
-    position:fixed;
-    bottom:0;
-    left:0;
-    text-align:center;
-    margin-top:30px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-around;
-    height:20px;
 }
 .addressPhone {
     text-align:center;
