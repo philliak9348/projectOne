@@ -19,9 +19,20 @@ function toggleServices() {
 function togglePopup() {
     var popup = document.getElementById('popup');
     popup.classList.toggle('showPopup');
-    document.getElementById("contactForm").reset();
+    reset();
     popup.classList.toggle('hidePopup');
 }
+function reset() {
+    document.getElementById('contactForm').reset();
+    clientFName.disabled = false;
+    clientLName.disabled = false;
+}
+function toggleParentPopup() {
+    var popup = document.getElementById('parentPopup');
+    popup.classList.toggle('showPopup');
+    popup.classList.toggle('hidePopup');
+}
+    var clientAge = document.getElementById("ages");
     var clientIdCheckbox = document.getElementById("contactIsClient");
     var contactFName = document.getElementById("contactFName");
     var contactLName = document.getElementById("contactLName");
@@ -31,12 +42,32 @@ function togglePopup() {
     var contactForm = document.getElementById("contactForm");
     clientIdCheckbox.checked = false;
     clientIdCheckbox.addEventListener('change', (event) => {
+        if (clientAge.selectedIndex == 1 || clientAge.selectedIndex == 2 || clientAge.selectedIndex == 3) {
+            clientIdCheckbox.checked = false;
+            toggleParentPopup();
+        }
         if (clientIdCheckbox.checked == true) {
             clientFName.disabled = true;
             clientLName.disabled = true;
         }
-        else {
+        if (clientIdCheckbox.checked == false) {
             clientFName.disabled=false;
             clientLName.disabled=false;
         }
      })
+     clientAge.addEventListener('change',(event) => {
+        if((clientAge.selectedIndex == 1 || clientAge.selectedIndex == 2 || clientAge.selectedIndex == 3) && clientIdCheckbox.checked == true) {
+            clientIdCheckbox.checked = false;
+            clientFName.disabled = false;
+            clientLName.disabled = false;
+            toggleParentPopup();
+        }
+     })
+
+function toggleLogin() {
+    var popup = document.getElementById('signInPopup');
+    popup.classList.toggle('showPopup');
+    document.getElementById('loginForm').reset();
+    popup.classList.toggle('hidePopup');
+    document.getElementById('loginForm').reset();
+}
