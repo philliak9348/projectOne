@@ -9,7 +9,7 @@
     margin:auto;
     margin-bottom:30px;
     padding:50px;
-    background-color:#fcc0c5;
+    background-color:#73D9F0;
 }
 .root {
     width:80%;
@@ -18,7 +18,7 @@
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    background-color:#fcc0c5;
+    background-color:#73D9F0;
     padding:30px;
 }
 #instruction {
@@ -30,9 +30,9 @@ form {
     margin:30px;
     font-size:15px;
     line-height:30px;
-    background-color:#c6c8d2;
-    border-left: #98042d solid 5px;
-    border-right: #98042d solid 5px;
+    background-color:gray;
+    border-left: white solid 5px;
+    border-right: white solid 5px;
 }
 .contactInfoContainer {
     white-space:pre;
@@ -45,7 +45,7 @@ form {
     justify-content:center;
 }
 #address, #emails, #callPhone {
-    border-bottom:3px solid #98042d;
+    border-bottom:3px solid #F7B301;
 }
 .socialIcon {
     width:50px;
@@ -74,7 +74,7 @@ form {
 }
 #popup, #parentPopup {
     font-family: 'Marvel';font-size: 25px;
-    background-color:#98042d;
+    background-color:#F7B301;
     border:5px black solid;
     border-radius:5px;
     position:fixed;

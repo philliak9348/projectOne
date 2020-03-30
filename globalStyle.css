@@ -4,7 +4,7 @@ html {
 body {
     margin: 0;
     margin-top:30px;
-    background-color:#bf4c41;
+    background-color:#1966B0;
     position:relative;
 }
 button {
@@ -30,7 +30,7 @@ ul {
     flex-direction:row;
     height:90px;
     width:320px;
-    background-color:#98042d;
+    background-color:#F7B301;
     justify-content:flex-start;
 }
 #navService {
@@ -41,7 +41,7 @@ ul {
     text-align:center;
     height:30px;
     font-size:15px;
-    background-color:#98042d;
+    background-color:#F7B301;
     border-left: 1px white solid;
     padding-left: 5px;
 
@@ -59,16 +59,17 @@ ul {
     margin: 0;
     top: 100%;
     left: 0;
-    background-color:#98042d;
+    background-color:#F7B301;
     display:flex;
     flex-direction:column;
     display:none;
     white-space:nowrap;
+    color:white;
 }
 li {
     height:40px;
     border-left; 1px white solid;
-    background-color:#98042d;
+    background-color:#F7B301;
     margin:auto;
     text-align:center;
     color:white;
@@ -77,13 +78,13 @@ li {
     padding-top:3px;
     margin:0;
     color:white;
-    background-color:#98042d;
+    background-color:#F7B301;
     align-text:center;
     padding:0;
 }
 .menuButton {
     font-size:25px;
-    background-color:#98042d;
+    background-color:#F7B301;
     padding-left:5px;
     padding-right:3px;
     color:white;
@@ -93,12 +94,12 @@ li {
     height:30px;
     color: white;
     font-size:15px;
-    background-color:#98042d;
+    background-color:#F7B301;
     border-left: 1px white solid;
     padding-left: 5px;
 }
 #dropService {
-    background-color:#98042d;
+    background-color:#F7B301;
     color:white;
     text-align:center;
     width:100%;
@@ -113,4 +114,12 @@ button:hover {
     text-align:center;
     font-style:italic;
     padding:10px;
+}
+#bottomBar {
+    float:bottom;
+    background-color:#F7B301;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
 }

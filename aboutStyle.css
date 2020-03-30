@@ -1,7 +1,7 @@
 .container {
     margin:auto;
     margin-top:100px;
-    background-color:#e1e2e7;
+    background-color:#73D9F0;
     text-align:center;
     width:70%;
     padding:20px;
@@ -12,7 +12,7 @@
 .aboutTitle {
     font-size:50px;
     font-variant:small-caps;
-    background-color:#98042d;
+    background-color:#F7B301;
     padding:10px;
     border-right:5px black solid;
     border-left:5px black solid;
@@ -26,14 +26,14 @@
 #Jordan {
     height:400px;
     width:auto;
-    border-left:#98042d solid 5px;
-    border-right:5px #98042d solid;
+    border-left:#F7B301 solid 5px;
+    border-right:5px #F7B301 solid;
 }
 #Staff {
     height:250px;
     width:auto;
-    border-left:#98042d solid 5px;
-    border-right:5px #98042d solid;
+    border-left:#F7B301 solid 5px;
+    border-right:5px #F7B301 solid;
 }
 figcaption {
     font-variant:small-caps;
@@ -44,14 +44,14 @@ figcaption {
     font-size:20px;
 }
 #staffContainer {
-    background-color:#e1e2e7;
+    background-color:#73D9F0;
     margin-bottom: 100px;
 }
 .staffTitle {
     font-variant:all-caps;
     font-size:45px;
     padding:30px;
-    border-bottom:3px solid #98042d;
+    border-bottom:3px solid #F7B301;
 }
 .staff {
     display:flex;
@@ -73,11 +73,11 @@ figcaption {
     max-height:350px;
     width:250px;
     margin:15px;
-    border-left:5px #98042d solid;
-    border-right:5px #98042d solid;
+    border-left:5px #F7B301 solid;
+    border-right:5px #F7B301 solid;
 }
 .bottomBar{
-    background-color:#98042d;
+    background-color:#F7B301;
     width:100%;
     padding:30px;
     position:fixed;

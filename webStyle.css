@@ -14,7 +14,7 @@ input {
     height:300px;
     width:250px;
     border: black solid 3px;
-    background-color: #c6c8d2;
+    background-color: #F7B301;
     padding:15px;
     font-size:25px;
 }
@@ -109,7 +109,7 @@ input {
     align-items: center;
     text-align:center;
     padding:30px;
-    background-color:#C66C49;
+    background-color:#73D9F0;
 }
 #whowhat {
     display:flex;
@@ -127,7 +127,7 @@ input {
 .card {
     margin:10px;
     padding:15px;
-    background-color:#F5D6AB;
+    background-color:#EB773E;
     text-align:center;
     word-wrap: normal;
     flex-grow:1;
@@ -184,7 +184,7 @@ h2 {
     padding:5px;
     margin:15px;
     height:200px;
-    background:#c4dbe0;
+    background:#EB773E;
     align-items:center;
     border-left:black 3px solid;
     border-right:black 3px solid;
@@ -203,7 +203,7 @@ img {
     font-variant:small-caps;
     font-style:bold;
     font-size:15px;
-    background-color:#c6c8d2;
+    background-color:#EB773E;
     font-size:30px;
     }
 #servButton:hover {
