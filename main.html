@@ -12,32 +12,46 @@
 <body>
 
 <!-- Nav -->
-    <ul id="nav" class = 'closedMenu'>
-        <li>
-            <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
-        </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
-        </li>
-        <li id="navService">Services
-            <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
-            <ul class="dropdown">
-                <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
-                <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
-                <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
-                <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
-            </ul>
-        </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
-        </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('Contact.html')">Contact</button>
-        </li>
-        <li>
-            <button type = button class="pageButton" onclick="openFile('Contact.html')">Sign In</button>
-        </li>
-    </ul>
+<ul id="nav" class = 'closedMenu'>
+    <li>
+        <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+    </li>
+    <li id="navService">Services
+        <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
+        <ul class="dropdown">
+            <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
+            <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
+            <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
+            <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
+        </ul>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('Contact.html')">Contact</button>
+    </li>
+    <li>
+        <button type="button" class="pageButton" onclick="toggleLogin()">Sign In</button>
+    </li>
+</ul>
+<!--Sign in -->
+<div class ='hidePopup' id="signInPopup">
+    <form id="loginForm">
+        Please Log In<br><br>
+        <label for="Email">Email:</label><br>
+        <input type = 'text' id="Email"><br>
+        <label for="Password">Password:</label><br>
+        <input type = 'password' id="Password" minlength="10"><br><br>
+        <div id="signInButtons">
+            <button type = 'button' id= "login" onclick="toggleLogin()">Log In</button>
+            <button type = 'button' id="cancel" onclick="toggleLogin()">Cancel</button>
+        </div>
+    </form>
+</div>
 <!-- Heading -->
 <div class=title>Welcome to <p id="speecheasy">Speech Easy</p><br>A speech therapy clinic dedicated to helping you.</div>
 <!-- Info-->
@@ -61,13 +75,13 @@
             <button class="serviceCard"onclick="openFile('senior.html')"><h4>Seniors</h4><img src="senior.png" alt="Senior"></button>
         </div>
     </div>
-<!-- Contact Us -->
-<div class=outer id='contact'><button type=button class = 'exploreButton'onclick="openFile('Contact.html')">Contact Us!</button><p>Not finding what you need when exploring our website?<br>Please contact us with any questions you have.</p>
+    <!-- Contact Us -->
+    <div class=outer id='contact'><button type=button class = 'exploreButton'onclick="openFile('Contact.html')">Contact Us!</button><p>Not finding what you need when exploring our website?<br>Please contact us with any questions you have.</p>
     </div>
 </div>
 <!--Footer-->
 
-<div class="bottomBar">
+<div id="bottomBar">
     <img src="emblem.svg" alt="Speech Easy Icon">
     <div class="addressPhone">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138</div>
 </div>
