@@ -6,6 +6,7 @@
     <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
     <link rel="stylesheet" href="globalStyle.css">
     <link rel="stylesheet" href="contactStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <!-- Navigation Bar -->
@@ -43,20 +44,19 @@
 </div>
 <!-- Contact Form & Info -->
 <div class="root">
+    <!--Form-->
+    <div id="instruction">Get the process started! Fill out the below survey, so you can be contacted by the staff member that best fits you!<br>
     <form id="contactForm">
-        <p id="instruction">Get the process started! Fill out the below survey, so you can be contacted by the staff member that best fits you!</p><br>
-        <label for="contactFName">Your Name -> First: </label>
-        <input type = 'text' id="contactFName">
-        <label for="contactLName">Last Name: </label>
-        <input type = 'text' id="contactLName"><br>
+        <label for="contactFName">Your Name: </label>
+        <input type = 'text' onfocus="this.value=''" id="contactFName" value="First Name...">
+        <input type = 'text' onfocus="this.value=''" id="contactLName" value="Last Name...">
         <label for="contactIsClient">Are you the client?</label>
-        <input type = "checkbox" id="contactIsClient"><br>
-        <label for="clientFName">Name of Client -> First:</label>
-        <input type = 'text' id="clientFName">
-        <label for="clientLName">Last:</label>
-        <input type = 'text' id="clientLName"><br>Age of Client:
+        <input type = "checkbox" id="contactIsClient">
+        <label for="clientFName">Client: </label>
+        <input type = 'text' onfocus="this.value=''" id="clientFName" value="First Name...">
+        <input type = 'text' onfocus="this.value=''" id="clientLName" value="Last Name...">
         <select id="ages" name="Age of Client">
-            <option value="default" selected>Choose from Options</option>
+            <option value="default" selected>Age of Client...</option>
             <option value="infant">Newborn through 5</option>
             <option value="under10">5 to Ten</option>
             <option value="under18">11 through 18</option>
@@ -65,13 +65,13 @@
             <option value="under50">40 to 50</option>
             <option vaue="under60">50 to 60</option>
             <option value="60Plus">60+</option>
-        </select><br>
-        <label for="email">Email:</label>
-        <input type = 'text' id="email"><br>
-        <label for="phone">Phone:</label>
-        <input type = 'text' id="phone"><br>
-        <input type = 'button' id= "submitButton" value="Submit" onclick="togglePopup()">
+        </select>
+        <input type = 'text' onfocus="this.value=''" id="email" value="Email">
+        <input type = 'text' onfocus="this.value=''" id="phone" value="###-###-####"><br>
+        <button id= "submitButton" onclick="togglePopup()">Submit</button>
     </form>
+    </div>
+    <!--Info-->
     <div class="contactInfoContainer">
         <div class="contactInfo" id="callPhone"><p>Call us Directly!<br>555-1294</p></div>
         <div class="contactInfo" id="emails"><p>Questions about an Appointment?<br>appointmentHelp@speecheasy.org<br><br>General Contact<br>generalContact@speechEasy.org</p></div>
@@ -106,7 +106,7 @@
 </div>
 <!--Footer-->
 <div id="bottomBar">
-    <img src="emblem.svg" alt="Speech Easy Icon">
+    <img id="emblem" src="emblem.svg" alt="Speech Easy Icon">
     <div class="addressPhone">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138</div>
 </div>
 <script type="text/javascript" src="script.js"></script>

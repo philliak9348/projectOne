@@ -147,8 +147,8 @@ input {
 }
 #whoWhatImage {
     border: 3px black solid;
-    height:400px;
-    width:1000px;
+    height:30%;
+    width:30%;
     margin:30px;
 }
 h2 {
@@ -223,9 +223,9 @@ img {
 #contactButton:hover {
     background-color:#e1e2e7;
 }
-#contactImage {
-    height:75px;
-    width:100px;
+#emblem {
+    height:5%;
+    width:5%;
 }
 .addressPhone {
     text-align:center;
