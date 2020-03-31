@@ -24,14 +24,15 @@
     align-content:center;
 }
 #Jordan {
-    height:400px;
+    height: 75%;
+    width:50%;
     width:auto;
     border-left:#F7B301 solid 5px;
     border-right:5px #F7B301 solid;
 }
 #Staff {
-    height:250px;
-    width:auto;
+    height:75%;
+    width:75%;
     border-left:#F7B301 solid 5px;
     border-right:5px #F7B301 solid;
 }
@@ -70,8 +71,9 @@ figcaption {
     text-align:center;
 }
 .staffPic {
-    max-height:350px;
-    width:250px;
+    max-height:200px;
+    width:30%;
+    height:30%;
     margin:15px;
     border-left:5px #F7B301 solid;
     border-right:5px #F7B301 solid;
