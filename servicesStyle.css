@@ -1,20 +1,29 @@
+#heading{
+    text-align:center;
+    font-variant:small-caps;
+    padding:10px;
+    font-size:50px;
+    color:white;
+}
 #servicesSpecific {
     display:flex;
     flex-direction:row;
-   justify-content:space-between;
-   width:100%;
-   background-color:white;
-   padding:10px;
-   height:400px;
+    justify-content:space-evenly;
+    align-items:center;
+    width:100%;
+    background-color:white;
+    padding:10px;
+    height:400px;
+}
+#servicesInfo {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
+    box-sizing:border-box
 }
 .serviceImage {
-    padding:30px;
-    height:300px;
-    width:auto;
-}
-#telepracticeInfo {
-    position:absolute;
-    left:50px;
+    height:80%;
 }
 .info {
     display:block;
@@ -23,20 +32,12 @@
     white-space:normal;
     overflow:visible;
     padding:15px;
-    height:500px;
-}
-#singleInfo {
-    position:absolute;
-    left:40%;
-}
-#groupInfo {
-    position:absolute;
-    right:50px;
+    height:100%;
 }
 .bullet {
-    padding:10px;
+    padding:30px;
     margin:10px 0;
-    height:200px;
+    height:50%;
 }
 figcaption {
     text-align:center;
