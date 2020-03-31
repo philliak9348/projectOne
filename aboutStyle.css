@@ -18,21 +18,19 @@
     border-left:5px black solid;
 }
 #JordynandStaff {
+    width:90%;
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-content:center;
 }
 #Jordan {
-    height: 75%;
-    width:50%;
-    width:auto;
+    width:70%;
     border-left:#F7B301 solid 5px;
     border-right:5px #F7B301 solid;
 }
 #Staff {
-    height:75%;
-    width:75%;
+    width:100%;
     border-left:#F7B301 solid 5px;
     border-right:5px #F7B301 solid;
 }
@@ -71,29 +69,12 @@ figcaption {
     text-align:center;
 }
 .staffPic {
-    max-height:200px;
     width:30%;
-    height:30%;
     margin:15px;
     border-left:5px #F7B301 solid;
     border-right:5px #F7B301 solid;
 }
-.bottomBar{
-    background-color:#F7B301;
-    width:100%;
-    padding:30px;
-    position:fixed;
-    bottom:0;
-    left:0;
-    text-align:center;
-    margin-top:30px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-around;
-    height:20px;
-}
 #bottomImage {
-    height:100px;
+    height:10%;
     width:auto;
 }
