@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="contactStyle.css">
 </head>
 <body>
-<header>
-    <ul id="nav" class = 'closedMenu'>
+<!-- Navigation Bar -->
+<ul id="nav" class = 'closedMenu'>
         <li>
             <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
         </li>
@@ -32,15 +32,16 @@
             <button type=button class='pageButton' onclick="openFile('Contact.html')">Contact</button>
         </li>
     </ul>
-</header>
+<!-- Contact Head Paragraph -->
 <div class="whyContactUs">
     <h1>Where am I?</h1>
-    Welcome to our contact hub! Here is all of the best ways to get in contact with us, whether it's your first
+    Welcome to our contact hub! Here are all of the best ways to get in contact with us, whether it's your first
     time reading up on Speech Easy, or you're a returning client! You can contact us directly via the email accounts listed
     on the side, or call our number if you want to discuss your questions with a human. If you're not sure who you need to be in contact with, please fill out the
     form below and we will find which of us is the best fit for you! We should get back to you within the business day, or
     at the latest, by the day after you contact us.
 </div>
+<!-- Contact Form & Info -->
 <div class="root">
     <form id="contactForm">
         <p id="instruction">Get the process started! Fill out the below survey, so you can be contacted by the staff member that best fits you!</p><br>
@@ -85,6 +86,7 @@
         </div>
     </div>
 </div>
+<!-- Form Submit Popup -->
 <div class="hidePopup" id="popup">
     Thank you for contacting us! We will contact you via the email you provided by the end of tomorrow's
     business day. Do you want to return to the Home page or stay here?<br>
@@ -95,12 +97,14 @@
         </div>
     </div>
 </div>
+<!-- Parental Contact Popup -->
 <div class="hidePopup" id="parentPopup">
     <div class="parentAlert">
         <p> If the client is under 18, a parent or guardian has to contact the clinic.</p>
         <button  type = button id="close" onclick="toggleParentPopup()">Close</button>
     </div>
 </div>
+<!--Footer -->
 <div id="bottomBar">
     <img src="emblem.svg" alt="Speech Easy Icon">
     <div class="addressPhone">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138</div>
