@@ -19,7 +19,7 @@ function toggleServices() {
 function togglePopup() {
     var popup = document.getElementById('popup');
     popup.classList.toggle('showPopup');
-    reset();
+    document.getElementById('contactForm').reset();
     popup.classList.toggle('hidePopup');
 }
 function reset() {
@@ -33,7 +33,7 @@ function toggleParentPopup() {
     popup.classList.toggle('hidePopup');
 }
     var clientAge = document.getElementById("ages");
-    var clientIdCheckbox = document.getElementById("contactIsClient");
+    var clientIdCheckbox = document.getElementById("clientCheckbox");
     var contactFName = document.getElementById("contactFName");
     var contactLName = document.getElementById("contactLName");
     var clientFName = document.getElementById("clientFName");
@@ -41,6 +41,7 @@ function toggleParentPopup() {
     var submitButton = document.getElementById("submitButton");
     var contactForm = document.getElementById("contactForm");
     clientIdCheckbox.checked = false;
+
     clientIdCheckbox.addEventListener('change', (event) => {
         if (clientAge.selectedIndex == 1 || clientAge.selectedIndex == 2 || clientAge.selectedIndex == 3) {
             clientIdCheckbox.checked = false;

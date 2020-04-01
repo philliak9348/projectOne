@@ -1,12 +1,27 @@
 body {
     overflow:scroll;
 }
+.title {
+    margin:auto;
+    padding:30px;
+    text-align:center;
+    width:25%;
+    align-content:center;
+}
+#welcome {
+    font-size: 3vw;
+}
+#speecheasy {
+    font-size: 5vw;
+    padding:0;
+    margin:0;
+}
 input {
     height:30px;
     width:150px;
 }
 #signInPopup {
-    font-family: 'Marvel';font-size: 22px;
+    font-family: 'Marvel';
     position:fixed;
     text-align:center;
     right:50px;
@@ -85,22 +100,6 @@ input {
     justify-content: space-around;
     margin:auto;
     margin-bottom:100px;
-}
-.title {
-    margin:auto;
-    padding:30px;
-    text-align:center;
-    font-variant:small-caps;
-    width:25%;
-    align-content:center;
-}
-#welcome {
-    font-size: 55px;
-}
-#speecheasy {
-    font-size: 80px;
-    padding:0;
-    margin:0;
 }
 .outer {
     width:90%;
