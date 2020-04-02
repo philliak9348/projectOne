@@ -44,10 +44,12 @@
         if (popup.classList.contains('hidePopup')) {
             popup.classList.remove("hidePopup");
             popup.classList.add("showPopup");
+            reset();
             }
         else if (popup.classList.contains('showPopup')) {
             popup.classList.remove('showPopup');
             popup.classList.add('hidePopup');
+            reset();
             }
         }
     function toggleParentPopup() {
