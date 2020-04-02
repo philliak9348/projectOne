@@ -21,7 +21,7 @@ button {
 .closedMenu {
     position:fixed;
     right:0;
-    width:35px;
+    width:1.5%;
     overflow:hidden;
 }
 ul {
@@ -122,4 +122,4 @@ button:hover {
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
-}ace
+}

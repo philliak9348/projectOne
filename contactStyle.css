@@ -6,7 +6,6 @@
 .root {
     background-color:#84D9F0;
     padding:20px;
-    width:80%;
     margin:auto;
 }
 #contactForm {
@@ -31,6 +30,16 @@ input[type=text], select, #submitButton {
 #submitButton {
     background-color:#F7B301;
 }
+option {
+    width:auto;
+}
+input[type=checkbox]{
+    width:20px;
+    height:20px;
+    border-radius:4px;
+    background-color:white;
+
+}
 .specificInfo {
     display:flex;
     flex-direction:row;
@@ -47,8 +56,7 @@ input[type=text], select, #submitButton {
 }
 #popup, #parentPopup {
     font-family: 'Marvel';
-    font-size: 25px;
-    background-color:#F7B301;
+    background-color:#EB773E;
     border:5px black solid;
     border-radius:5px;
     position:fixed;
@@ -77,8 +85,8 @@ input[type=text], select, #submitButton {
     margin:30px;
 }
 .showPopup {
-    visibility:visible;
-}
+    visibility: visible;
+    }
 .hidePopup {
     visibility:hidden;
     overflow:hidden;

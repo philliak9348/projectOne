@@ -2,94 +2,93 @@
 <html lang="en">
 <head>
     <title>Contact Doyle Speech Clinic</title>
-    <script type="text/javascript" src="script.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
     <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
     <link rel="stylesheet" href="globalStyle.css">
     <link rel="stylesheet" href="contactStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!-- Navigation Bar-->
-    <ul id="nav" class = 'closedMenu'>
-        <li>
-            <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
-        </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
-        </li>
-        <li id="navService">Services
-            <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
-            <ul class="dropdown">
-                <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
-                <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
-                <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
-                <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
-            </ul>
-        </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
-        </li>
-        <li>
-            <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
-        </li>
-    </ul>
-    <!--Main Content-->
-    <div class="root">
-        <div class="header"> Contact Us!</div>
-        <!--Form-->
-        <form id="contactForm">
-            <label for="contactFName">Your Name: </label>
-            <input type = 'text' onfocus="this.value=''" id="contactFName" value="First Name...">
-            <input type = 'text' onfocus="this.value=''" id="contactLName" value="Last Name...">
-            <label for="contactIsClient">Are you the client?</label>
-            <input type = "checkbox" id="contactIsClient">
-            <label for="clientFName">Client: </label>
-            <input type = 'text' onfocus="this.value=''" id="clientFName" value="First Name...">
-            <input type = 'text' onfocus="this.value=''" id="clientLName" value="Last Name...">
-            <select id="ages" name="Age of Client">
-                <option value="default" selected>Age of Client...</option>
-                <option value="infant">Newborn through 5</option>
-                <option value="under10">5 to Ten</option>
-                <option value="under18">11 through 18</option>
-                <option value="under30">19 to 30</option>
-                <option value="under40">30 to 40</option>
-                <option value="under50">40 to 50</option>
-                <option vaue="under60">50 to 60</option>
-                <option value="60Plus">60+</option>
-            </select>
-            <label for="email">Contact Information: </label>
-            <input type = 'text' onfocus="this.value=''" id="email" value="Email">
-            <input type = 'text' onfocus="this.value=''" id="phone" value="###-###-####"><br>
-            <button id= "submitButton" onclick="togglePopup()">Submit</button>
-        </form>
-        <!--Contact Information-->
-        <div class="specificInfo">
-            <div class="contactInfo" id="callPhone">(555)555-1294</div>
-            <div class="contactInfo" id="emails">appointmentHelp@speecheasy.org</div>
-            <div class="contactInfo" id="address">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138</div>
-        </div>
-    <!-- Form Submit Popup -->
-    <div class="hidePopup" id="popup">
-        Thank you for contacting us! We will contact you via the email you provided by the end of tomorrow's
-        business day. Do you want to return to the Home page or stay here?<br>
-        <div class="popupButtons">
-            <div class="popupButtons">
-                <button  type = button id="goHome" onclick="openFile('main.html')">Return Home</button>
-                <button type="button" id="stay" onclick="togglePopup()">Stay Here</button>
-            </div>
-        </div>
+<!-- Navigation Bar -->
+<ul id="nav" class = 'closedMenu'>
+    <li>
+        <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+    </li>
+    <li id="navService">Services
+        <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
+        <ul class="dropdown">
+            <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
+            <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
+            <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
+            <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
+        </ul>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+    </li>
+    <li>
+        <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
+    </li>
+</ul>
+<!--Main Content-->
+<div class="root">
+    <div class="header"> Contact Us!</div>
+    <!--Form-->
+    <form id="contactForm">
+        <label for="contactFName">Your Name: </label>
+        <input type = 'text' onfocus="this.value=''" id="contactFName" value="First Name...">
+        <input type = 'text' onfocus="this.value=''" id="contactLName" value="Last Name...">
+        <label for="contactIsClient">Check below if you are the client.</label>
+        <input type = "checkbox" id="contactIsClient">
+        <input type="text" onfocus="this.value=''" id="relationshipTo" value="Your relationship to the client...">
+        <label for="clientFName">Client: </label>
+        <input type = 'text' onfocus="this.value=''" id="clientFName" value="First Name...">
+        <input type = 'text' onfocus="this.value=''" id="clientLName" value="Last Name...">
+        <select id="ages" name="Age of Client">
+            <option value="default" selected>Age of Client...</option>
+            <option value="infant">Newborn through 5</option>
+            <option value="under10">5 to Ten</option>
+            <option value="under18">11 through 18</option>
+            <option value="under30">19 to 30</option>
+            <option value="under40">30 to 40</option>
+            <option value="under50">40 to 50</option>
+            <option vaue="under60">50 to 60</option>
+            <option value="60Plus">60+</option>
+        </select>
+        <label for="email">Contact Information: </label>
+        <input type = 'text' onfocus="this.value=''" id="email" value="Email">
+        <input type = 'text' onfocus="this.value=''" id="phone" value="###-###-####"><br>
+        <button type = button id = "submitButton" onclick="togglePopup()">Submit</button>
+    </form>
+    <!--Contact Information-->
+    <div class="specificInfo">
+        <div class="contactInfo" id="callPhone">(555)555-1294</div>
+        <div class="contactInfo" id="emails">appointmentHelp@speecheasy.org</div>
+        <div class="contactInfo" id="address">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138</div>
     </div>
-    <!-- Parental Contact Popup -->
-    <div class="hidePopup" id="parentPopup">
-        <div class="parentAlert">
-            <p> If the client is under 18, a parent or guardian has to contact the clinic.</p>
-            <button  type = button id="close" onclick="toggleParentPopup()">Close</button>
-        </div>
+</div>
+<!-- Form Submit Popup -->
+<div class="hidePopup" id="popup">
+    Thank you for contacting us! We will contact you via the email you provided by the end of tomorrow's
+    business day. Do you want to return to the Home page or stay here?<br>
+    <div class="popupButtons">
+        <button  type = button id="goHome" onclick="openFile('main.html')">Return Home</button>
+        <button type="button" id="stay" onclick="togglePopup()">Stay Here</button>
     </div>
-        <!--Footer-->
-        <div id="bottomBar">
-            <img id="emblem" src="emblem.svg" alt="Speech Easy Icon">
-        </div>
-        <script type="text/javascript" src="script.js"></script>
+</div>
+<!-- Parental Contact Popup -->
+<div class="hidePopup" id="parentPopup">
+    <p> If the client is under 18, a parent or guardian has to contact the clinic.</p>
+    <div class="popupButtons">
+        <button  type = button id="close" onclick="toggleParentPopup()">Close</button>
+    </div>
+</div>
+<!--Footer-->
+<div id="bottomBar">
+    <img id="emblem" src="emblem.svg" alt="Speech Easy Icon">
+</div>
 </body>
 </html>
