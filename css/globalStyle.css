@@ -120,3 +120,7 @@ li {
     align-items:center;
     justify-content:space-around;
 }
+#emblem {
+    width:15%;
+    height:auto;
+}
