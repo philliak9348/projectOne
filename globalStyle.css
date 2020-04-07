@@ -39,12 +39,10 @@ ul {
     text-align:center;
     color:white;
     text-align:center;
-    height:30px;
-    font-size:15px;
+    font-size:1vw;
     background-color:#F7B301;
     border-left: 1px white solid;
     padding-left: 5px;
-
 }
 #navService:hover > .dropdown {
   display: block;
@@ -91,9 +89,8 @@ li {
 }
 .pageButton {
     text-align:center;
-    height:30px;
     color: white;
-    font-size:15px;
+    font-size:1vw;
     background-color:#F7B301;
     border-left: 1px white solid;
     padding-left: 5px;
