@@ -23,7 +23,6 @@ ul {
     display:flex;
     flex-direction:row;
     height:90px;
-    width:auto;
     background-color:#F7B301;
     justify-content:flex-start;
     position:relative;
@@ -31,11 +30,12 @@ ul {
 .openMenu {
     position:fixed;
     right:0;
+    width:auto;
 }
 .closedMenu {
     position:fixed;
     right:0;
-    width:1.5%;
+    width:30px;
     overflow:hidden;
 }
 li {
