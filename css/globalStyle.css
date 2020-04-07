@@ -14,6 +14,9 @@ button {
     border:0;
     cursor:pointer;
 }
+button:hover {
+    background-color:#e1e2e7;
+}
 .openMenu {
     position:fixed;
     right:0;
@@ -25,24 +28,54 @@ button {
     overflow:hidden;
 }
 ul {
+    position:relative;
     list-style-type: none;
     display:flex;
     flex-direction:row;
     height:90px;
-    width:320px;
+    width:auto;
     background-color:#F7B301;
     justify-content:flex-start;
-}
-#navService {
     position:relative;
+}
+li {
+    font-size:1vw;
+    height:40px;
+    border-left; 1px white solid;
+    background-color:#F7B301;
     margin:auto;
     text-align:center;
     color:white;
+}
+.menuButton {
+    font-size:25px;
+    background-color:#F7B301;
+    padding-left:5px;
+    padding-right:3px;
+    color:white;
+}
+.navButton {
     text-align:center;
-    font-size:1vw;
     background-color:#F7B301;
     border-left: 1px white solid;
     padding-left: 5px;
+    color:white;
+    font-size:1vw;
+    padding:10px;
+    cursor:pointer;
+    display:block;
+}
+#navService {
+    cursor:pointer;
+    display:block;
+    cursor:pointer;
+    text-align:center;
+    background-color:#F7B301;
+    border-left: 1px white solid;
+    padding-left: 5px;
+    color:white;
+    font-size:1vw;
+    padding:10px;
 }
 #navService:hover > .dropdown {
   display: block;
@@ -56,55 +89,22 @@ ul {
     padding: 0;
     margin: 0;
     top: 100%;
-    left: 0;
+    left: 35%;
     background-color:#F7B301;
     display:flex;
     flex-direction:column;
     display:none;
-    white-space:nowrap;
-    color:white;
-}
-li {
-    height:40px;
-    border-left; 1px white solid;
-    background-color:#F7B301;
-    margin:auto;
-    text-align:center;
-    color:white;
+    width:auto;
 }
 .dropService {
     padding-top:3px;
     margin:0;
-    color:white;
     background-color:#F7B301;
     align-text:center;
-    padding:0;
-}
-.menuButton {
-    font-size:25px;
-    background-color:#F7B301;
-    padding-left:5px;
-    padding-right:3px;
+    padding:5px;
     color:white;
-}
-.pageButton {
-    text-align:center;
-    color: white;
-    font-size:1vw;
-    background-color:#F7B301;
-    border-left: 1px white solid;
-    padding-left: 5px;
-}
-#dropService {
-    background-color:#F7B301;
-    color:white;
-    text-align:center;
-    width:100%;
-    white-space: nowrap;
-
-}
-button:hover {
-    background-color:#e1e2e7;
+    font-size:15px;
+    width:auto;
 }
 #info {
     border-top:1px black solid;

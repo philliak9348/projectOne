@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Services for Birth to School-Age</title>
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
-    <link rel="stylesheet" href="servicesStyle.css">
-    <link rel="stylesheet" href="globalStyle.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
+    <link rel="stylesheet" href="css/servicesStyle.css">
+    <link rel="stylesheet" href="css/globalStyle.css">
 </head>
 <!-- Navigation Bar -->
 <ul id="nav" class = 'closedMenu'>
@@ -13,9 +13,9 @@
         <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+        <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
     </li>
-    <li id="navService">Services
+    <li class= 'navButton' id="navService">Services
         <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
         <ul class="dropdown">
             <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
@@ -25,18 +25,18 @@
         </ul>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+        <button type=button class='navButton' onclick="openFile('about.html')">About</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
+        <button type=button class='navButton' onclick="openFile('contact.html')">Contact</button>
     </li>
 </ul>
 <div id="heading"> Services for Children Younger than School-Aged </div>
 <!--Services Images -->
 <div id="servicesSpecific">
-    <img src="telepractice.png" class="serviceImage" alt="Telepractice Therapy">
-    <img src="singleChild.jpg" class="serviceImage"  alt="One on One Therapy Children">
-    <img src="groupChildren.jpg" class="serviceImage" alt="Group Therapy for Children">
+    <img src="images/telepractice.png" class="serviceImage" alt="Telepractice Therapy">
+    <img src="images/singleChild.jpg" class="serviceImage"  alt="One on One Therapy Children">
+    <img src="images/groupChildren.jpg" class="serviceImage" alt="Group Therapy for Children">
 </div>
 <!--Services Information-->
 <div id="servicesInfo">

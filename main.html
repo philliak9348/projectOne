@@ -3,10 +3,10 @@
 
 <head>
     <title>Speech Easy</title>
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
-    <link rel="stylesheet" href="globalStyle.css">
-    <link rel="stylesheet" href="webStyle.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
+    <link rel="stylesheet" href="css/globalStyle.css">
+    <link rel="stylesheet" href="css/webStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -18,9 +18,9 @@
         <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+        <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
     </li>
-    <li id="navService">Services
+    <li class="navButton" id="navService">Services
         <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
         <ul class="dropdown">
             <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
@@ -30,13 +30,13 @@
         </ul>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+        <button type=button class='navButton' onclick="openFile('about.html')">About</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
+        <button type=button class='navButton' onclick="openFile('contact.html')">Contact</button>
     </li>
     <li>
-        <button type="button" class="pageButton" onclick="toggleLogin()">Sign In</button>
+        <button type="button" class="navButton" onclick="toggleLogin()">Sign In</button>
     </li>
 </ul>
 <!--Sign in -->
@@ -64,16 +64,16 @@
             <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">What Do We Offer?</p><br><p class = whowhatText>We offer dependant and unique services  that will cater to you or your loved one's individual needs.</p></button>
             <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">Who Are We?</p><br><p class = whowhatText>Our staff is made up of hard-working, skilled and welcoming clinicians, willing to do whatever it takes to help you achieve the goals you have to live your life as you want.</p></button>
         </div>
-        <img src="emblem.svg" id="whoWhatImage">
+        <img src="images/emblem.svg" id="whoWhatImage">
     </div>
     <!-- Services -->
     <div class=outer id="serviceContainer"><div class="speech">Speech Easy offers a variety of services for clients of all ages.<br>Explore our services and staff to see how we can best cater to you.<br>Select the age group that fits you and see what we can offer you.
         <button type = button class = 'exploreButton' onclick="toggleServices()">Explore Services</button></div>
         <div class="servicesClose" id="services">
-            <button class="serviceCard"onclick="openFile('beforeSchool.html.html')"><h4>Birth to School-Age</h4><img src="baby.png" alt="Baby"></button>
-            <button class="serviceCard"onclick="openFile('schoolAge.html')"><h4>School-Age</h4><img src="school.png" alt="School"></button>
-            <button class="serviceCard"onclick="openFile('adult.html')"><h4>Adult</h4><img src="life.png" alt="Adult"></button>
-            <button class="serviceCard"onclick="openFile('senior.html')"><h4>Seniors</h4><img src="senior.png" alt="Senior"></button>
+            <button class="serviceCard"onclick="openFile('beforeSchool.html.html')"><h4>Birth to School-Age</h4><img src="images/baby.png" alt="Baby"></button>
+            <button class="serviceCard"onclick="openFile('schoolAge.html')"><h4>School-Age</h4><img src="images/school.png" alt="School"></button>
+            <button class="serviceCard"onclick="openFile('adult.html')"><h4>Adult</h4><img src="images/life.png" alt="Adult"></button>
+            <button class="serviceCard"onclick="openFile('senior.html')"><h4>Seniors</h4><img src="images/senior.png" alt="Senior"></button>
         </div>
     </div>
     <!-- Contact Us -->

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
-    <link rel="stylesheet" href="aboutStyle.css">
-    <link rel="stylesheet" href="globalStyle.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
+    <link rel="stylesheet" href="css/aboutStyle.css">
+    <link rel="stylesheet" href="css/globalStyle.css">
+    <script type="text/javascript" src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Doyle Speech Clinic</title>
 </head>
@@ -15,9 +15,9 @@
         <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+        <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
     </li>
-    <li id="navService">Services
+    <li class='navButton' id="navService">Services
         <ul class="dropdown">
             <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
             <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
@@ -26,17 +26,17 @@
         </ul>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+        <button type=button class='navButton' onclick="openFile('about.html')">About</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
+        <button type=button class='navButton' onclick="openFile('contact.html')">Contact</button>
     </li>
 </ul>
 <!--About Paragraph-->
 <div class = 'container' id="aboutContainer">
     <div class="aboutTitle">About Speech Easy</div>
-    <div id="JordynandStaff"><figure><img src="Jordan.jpg" id="Jordan" alt="Jordan Doyle"><figcaption>Jordan Doyle - Founder of Speech Easy</figcaption></figure>
-        <figure><img src="staff.jpeg" id="Staff" alt="Staff working with a new client"><figcaption>Staff working with a new client</figcaption></figure>
+    <div id="JordynandStaff"><figure><img src="images/Jordan.jpg" id="Jordan" alt="Jordan Doyle"><figcaption>Jordan Doyle - Founder of Speech Easy</figcaption></figure>
+        <figure><img src="images/staff.jpeg" id="Staff" alt="Staff working with a new client"><figcaption>Staff working with a new client</figcaption></figure>
     </div>
     <div class="aboutBody">
         Welcome to Speech Easy! Speech Easy was founded in February 2020 by Jordan Doyle. Doyle was determined to open his own speech
@@ -53,15 +53,15 @@
 <div class = 'container' id="staffContainer">
     <div class = 'staffTitle'>Meet our Staff</div>
     <div class = 'staff'>
-        <div class='staffMember'><img class="staffPic" src="jordyn.jpg" alt="Skylar Driver"><p>Skylar Driver is our ambiguously aged member of our staff, recently graduated from an ambiguous school.</p></div>
-        <div class = 'staffMember'><img class="staffPic"  src="student.jpg" alt="William DiCaprio"><p>William DiCaprio is our youngest member of our staff, recently graduated from somewhere cool.</p></div>
-        <div class = 'staffMember'><img class="staffPic" src="batman.jpg" alt="Chuck Affleck"><p>Chuck Affleck is our medium-youngest member of our staff, recently graduated from somewhere medium-cool.</p></div>
-        <div class = 'staffMember'><img class="staffPic" src="professor.jpg" alt="Sean Williams"><p>Sean Williams is our least-youngest member of our staff, recently graduated from somewhere least-cool.</p></div>
+        <div class='staffMember'><img class="staffPic" src="images/ordyn.jpg" alt="Skylar Driver"><p>Skylar Driver is our ambiguously aged member of our staff, recently graduated from an ambiguous school.</p></div>
+        <div class = 'staffMember'><img class="staffPic"  src="images/student.jpg" alt="William DiCaprio"><p>William DiCaprio is our youngest member of our staff, recently graduated from somewhere cool.</p></div>
+        <div class = 'staffMember'><img class="staffPic" src="images/batman.jpg" alt="Chuck Affleck"><p>Chuck Affleck is our medium-youngest member of our staff, recently graduated from somewhere medium-cool.</p></div>
+        <div class = 'staffMember'><img class="staffPic" src="images/professor.jpg" alt="Sean Williams"><p>Sean Williams is our least-youngest member of our staff, recently graduated from somewhere least-cool.</p></div>
     </div>
 </div>
 <!--Footer-->
 <div id="bottomBar">
-    <img src="emblem.svg" alt="Speech Easy Icon">
+    <img src="images/emblem.svg" alt="Speech Easy Icon">
     <div class="addressPhone">1997 Goodwill Avenue Suite #1212<br>Cambridge, MA 02138</div>
 </div>
 </body>

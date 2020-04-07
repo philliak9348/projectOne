@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <title>Contact Doyle Speech Clinic</title>
-    <script defer type="text/javascript" src="script.js"></script>
-    <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
-    <link rel="stylesheet" href="globalStyle.css">
-    <link rel="stylesheet" href="contactStyle.css">
+    <script defer type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
+    <link rel="stylesheet" href="css/globalStyle.css">
+    <link rel="stylesheet" href="css/contactStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -15,11 +15,10 @@
         <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+        <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
     </li>
-    <li id="navService">Services
-        <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
-        <ul class="dropdown">
+    <li id="navService" class='navButton'>Services
+            <ul class="dropdown">
             <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
             <li><button class="dropService"onclick="openFile('schoolAge.html')">School-Age</button></li>
             <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
@@ -27,10 +26,10 @@
         </ul>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+        <button type=button class='navButton' onclick="openFile('about.html')">About</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
+        <button type=button class='navButton' onclick="openFile('contact.html')">Contact</button>
     </li>
 </ul>
 <!--Main Content-->
@@ -88,7 +87,7 @@
 </div>
 <!--Footer-->
 <div id="bottomBar">
-    <img id="emblem" src="emblem.svg" alt="Speech Easy Icon">
+    <img id="emblem" src="images/emblem.svg" alt="Speech Easy Icon">
 </div>
 </body>
 </html>

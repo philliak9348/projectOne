@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Services for Seniors</title>
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="icon" href="emblem.svg" type = 'image/x-icon'/>
-    <link rel="stylesheet" href="globalStyle.css">
-    <link rel="stylesheet" href="servicesStyle.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
+    <link rel="stylesheet" href="css/globalStyle.css">
+    <link rel="stylesheet" href="css/servicesStyle.css">
 </head>
 <!--Navigation Bar-->
 <ul id="nav" class = 'closedMenu'>
@@ -13,9 +13,9 @@
         <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('main.html')">Home</button>
+        <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
     </li>
-    <li id="navService">Services
+    <li class='navButton' id="navService">Services
         <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
         <ul class="dropdown">
             <li><button class="dropService"onclick="openFile('beforeSchool.html')">Birth to School-Age</button></li>
@@ -25,18 +25,18 @@
         </ul>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('about.html')">About</button>
+        <button type=button class='navButton' onclick="openFile('about.html')">About</button>
     </li>
     <li>
-        <button type=button class='pageButton' onclick="openFile('contact.html')">Contact</button>
+        <button type=button class='navButton' onclick="openFile('contact.html')">Contact</button>
     </li>
 </ul>
 <div id="heading"> Services for Seniors </div>
 <!--Services Images-->
 <div id="servicesSpecific">
-    <img src="telepractice.png" class="serviceImage" alt="Telepractice Therapy">
-    <img src="singleSenior.jpg"  class="serviceImage" alt="One on One Senior Therapy">
-    <img src="groupSenior.png"  class="serviceImage" alt="Group Therapy Senior">
+    <img src="images/telepractice.png" class="serviceImage" alt="Telepractice Therapy">
+    <img src="images/singleSenior.jpg"  class="serviceImage" alt="One on One Senior Therapy">
+    <img src="images/groupSenior.png"  class="serviceImage" alt="Group Therapy Senior">
 </div>
 <!--Services Information-->
 <div id="servicesInfo">
