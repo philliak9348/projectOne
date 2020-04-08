@@ -15,7 +15,7 @@
 <!-- Nav -->
 <ul id="nav" class = 'closedMenu'>
     <li>
-        <button type = button class ='menuButton' onclick="togglePanel()">&#9776</button>
+        <button type = button id ='menuButton' onclick="togglePanel()">&#9776</button>
     </li>
     <li>
         <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
@@ -68,7 +68,7 @@
     </div>
     <!-- Services -->
     <div class=outer id="serviceContainer"><div class="speech">Speech Easy offers a variety of services for clients of all ages.<br>Explore our services and staff to see how we can best cater to you.<br>Select the age group that fits you and see what we can offer you.
-        <button type = button class = 'exploreButton' onclick="toggleServices()">Explore Services</button></div>
+        <button type = button class = 'exploreButton' id="servButton" onclick="toggleServices()">Explore Services</button></div>
         <div class="servicesClose" id="services">
             <button class="serviceCard"onclick="openFile('beforeSchool.html.html')"><h4>Birth to School-Age</h4><img src="images/baby.png" alt="Baby"></button>
             <button class="serviceCard"onclick="openFile('schoolAge.html')"><h4>School-Age</h4><img src="images/school.png" alt="School"></button>
@@ -77,7 +77,7 @@
         </div>
     </div>
     <!-- Contact Us -->
-    <div class=outer id='contact'><button type=button class = 'exploreButton'onclick="openFile('Contact.html')">Contact Us!</button><p>Not finding what you need when exploring our website?<br>Please contact us with any questions you have.</p>
+    <div class=outer id='contact'><button type=button class = 'exploreButton'onclick="openFile('contact.html')">Contact Us!</button><p>Not finding what you need when exploring our website?<br>Please contact us with any questions you have.</p>
     </div>
 </div>
 <!--Footer-->
