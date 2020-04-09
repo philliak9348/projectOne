@@ -3,19 +3,17 @@
 
 <head>
     <title>Speech Easy</title>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
     <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
     <link rel="stylesheet" href="css/webstyle.css">
     <link rel="stylesheet" href="css/globalstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-
 <!-- Nav -->
 <ul id="nav" class = 'closedMenu'>
     <li>
-        <button type = button id ='menuButton' onclick="togglePanel()">&#9776</button>
+        <button type = button id ='menuButton' onclick="togglePanel()">&#9776;</button>
     </li>
     <li>
         <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
@@ -23,10 +21,10 @@
     <li class="navButton" id="navService">Services
         <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
         <ul class="dropdown">
-            <li><button class="dropService"onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
-            <li><button class="dropService"onclick="openFile('schoolage.html')">School-Age</button></li>
-            <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
-            <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
+            <li><button class="dropService" onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
+            <li><button class="dropService" onclick="openFile('schoolage.html')">School-Age</button></li>
+            <li><button class="dropService" onclick="openFile('adult.html')">Adult</button></li>
+            <li><button class="dropService" onclick="openFile('senior.html')">Seniors</button></li>
         </ul>
     </li>
     <li>
@@ -61,7 +59,7 @@
     <!--Who Are We?-->
     <div class="outer" id='whowhat'>
         <div id="cards">
-            <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">What Are We?</p><br><p class = whowhatText>Speech Easy is a speech therapy clinic dedicated to helping those who wish to build or regain strong language skills.</p></button>
+            <button class='card' onclick="openFile('about.html')"><div class="whoWhatTitle">What Are We?</div><br><div class = whowhatText>Speech Easy is a speech therapy clinic dedicated to helping those who wish to build or regain strong language skills.</div></button>
             <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">What Do We Offer?</p><br><p class = whowhatText>We offer dependant and unique services  that will cater to you or your loved one's individual needs.</p></button>
             <button class='card' onclick="openFile('about.html')"><p class="whoWhatTitle">Who Are We?</p><br><p class = whowhatText>Our staff is made up of hard-working, skilled and welcoming clinicians, willing to do whatever it takes to help you achieve the goals you have to live your life as you want.</p></button>
         </div>
@@ -72,10 +70,10 @@
         <div class="speech">Speech Easy offers a variety of services for clients of all ages.<br>Explore our services and staff to see how we can best cater to you.<br>Select the age group that fits you and see what we can offer you.
         <button type = button class = 'exploreButton' id="servButton" onclick="toggleServices()">Explore Services</button></div>
         <div class="servicesClose" id="services">
-            <button class="serviceCard"onclick="openFile('beforeschool.html')"><h4>Birth to School-Age</h4><img src="images/baby.png" alt="Before School-Aged Children"></button>
-            <button class="serviceCard"onclick="openFile('schoolage.html')"><h4>School-Age</h4><img src="images/school.png" alt="School-Aged Children"></button>
-            <button class="serviceCard"onclick="openFile('adult.html')"><h4>Adult</h4><img src="images/life.png" alt="Adults"></button>
-            <button class="serviceCard"onclick="openFile('senior.html')"><h4>Seniors</h4><img src="images/senior.png" alt="Senior"></button>
+            <button class="serviceCard "onclick="openFile('beforeschool.html')"><h4>Birth to School-Age</h4><img src="images/baby.png" alt="Before School-Aged Children"></button>
+            <button class="serviceCard "onclick="openFile('schoolage.html')"><h4>School-Age</h4><img src="images/school.png" alt="School-Aged Children"></button>
+            <button class="serviceCard "onclick="openFile('adult.html')"><h4>Adult</h4><img src="images/life.png" alt="Adults"></button>
+            <button class="serviceCard "onclick="openFile('senior.html')"><h4>Seniors</h4><img src="images/senior.png" alt="Senior"></button>
         </div>
     </div>
     <!-- Contact Us -->

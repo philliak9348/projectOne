@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>Contact Doyle Speech Clinic</title>
-    <script defer type="text/javascript" src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/contactscript.js"></script>
     <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
     <link rel="stylesheet" href="css/globalstyle.css">
     <link rel="stylesheet" href="css/contactstyle.css">
@@ -12,17 +13,17 @@
 <!-- Navigation Bar -->
 <ul id="nav" class = 'closedMenu'>
     <li>
-        <button type = button id ='menuButton' onclick="togglePanel()">&#9776</button>
+        <button type = button id ='menuButton' onclick="togglePanel()">&#9776;</button>
     </li>
     <li>
         <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
     </li>
     <li id="navService" class='navButton'>Services
             <ul class="dropdown">
-            <li><button class="dropService"onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
-            <li><button class="dropService"onclick="openFile('schoolage.html')">School-Age</button></li>
-            <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
-            <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
+            <li><button class="dropService" onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
+            <li><button class="dropService" onclick="openFile('schoolage.html')">School-Age</button></li>
+            <li><button class="dropService" onclick="openFile('adult.html')">Adult</button></li>
+            <li><button class="dropService" onclick="openFile('senior.html')">Seniors</button></li>
         </ul>
     </li>
     <li>
@@ -54,7 +55,7 @@
             <option value="under30">19 to 30</option>
             <option value="under40">30 to 40</option>
             <option value="under50">40 to 50</option>
-            <option vaue="under60">50 to 60</option>
+            <option value="under60">50 to 60</option>
             <option value="60Plus">60+</option>
         </select>
         <label for="email">Contact Information: </label>

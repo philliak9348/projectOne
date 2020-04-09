@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Services for Seniors</title>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/servicescript.js"></script>
     <link rel="icon" href="images/emblem.svg" type = 'image/x-icon'/>
     <link rel="stylesheet" href="css/globalstyle.css">
     <link rel="stylesheet" href="css/servicesstyle.css">
@@ -10,7 +11,7 @@
 <!--Navigation Bar-->
 <ul id="nav" class = 'closedMenu'>
     <li>
-        <button type = button id ='menuButton' onclick="togglePanel()">&#9776</button>
+        <button type = button id ='menuButton' onclick="togglePanel()">&#9776;</button>
     </li>
     <li>
         <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
@@ -18,10 +19,10 @@
     <li class='navButton' id="navService">Services
         <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
         <ul class="dropdown">
-            <li><button class="dropService"onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
-            <li><button class="dropService"onclick="openFile('schoolage.html')">School-Age</button></li>
-            <li><button class="dropService"onclick="openFile('adult.html')">Adult</button></li>
-            <li><button class="dropService"onclick="openFile('senior.html')">Seniors</button></li>
+            <li><button class="dropService" onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
+            <li><button class="dropService" onclick="openFile('schoolage.html')">School-Age</button></li>
+            <li><button class="dropService" onclick="openFile('adult.html')">Adult</button></li>
+            <li><button class="dropService" onclick="openFile('senior.html')">Seniors</button></li>
         </ul>
     </li>
     <li>
@@ -34,34 +35,34 @@
 <div id="heading"> Services for Seniors</div>
 <!--Services Images-->
 <div class="content">
-    <button type="button" class="arrow" onclick="toggleInfoLeft()">&#60</button>
+    <button type="button" class="arrow" onclick="toggleInfoLeft()">&#60;</button>
     <div id="servicesSpecific">
         <div class ="infoLeft" id="telepractice">
             <img src="images/telepractice.png" class="serviceImage" alt="Telepractice Therapy">
+            <p class="infoTitle">Telepractice</p>
             <ul class= "info" id="telepracticeInfo">
-                <div class="infoTitle">Telepractice</div>
                 <li class="bullet">Telepractice allows clients and therapists to connect over an online communication service, allowing clients to be able to stay at home if necessary or more convenient.</li>
                 <li class="bullet">We use a third party service designed specifically for medical practices, so all video calls will be treated with the respect and privacy afforded by the law.</li>
             </ul>
         </div>
         <div class= "infoCenter" id="single">
             <img src="images/singlesenior.jpg"  class="serviceImage" alt="One on One Senior Therapy">
+            <p class="infoTitle">One-on-One Therapy</p>
             <ul class = 'info' id="singleInfo">
-                <div class="infoTitle">One-on-One Therapy</div>
                 <li class="bullet">Most commonly, we have clients that meet with our therapists one on one, which allows therapists to focus completely on your needs.</li>
                 <li class="bullet">One on one meetings usually occur once a week.</li>
             </ul>
         </div>
         <div class = "infoRight" id="group">
             <img src="images/groupsenior.jpg"  class="serviceImage" alt="Group Therapy Senior">
+            <p class="infoTitle">Group Therapy</p>
             <ul class='info' id="groupInfo">
-                <div class="infoTitle">Group Therapy</div>
                 <li class="bullet">Group therapy is an invaluable service that allows our clients to feel a sense of community.</li>
                 <li class="bullet">Group therapy allows our clients to work on their skills with other clients.</li>
             </ul>
         </div>
     </div>
-    <button type="button" class="arrow" onclick="toggleInfoRight()">&#62 </button>
+    <button type="button" class="arrow" onclick="toggleInfoRight()">&#62;</button>
 </div>
 <!--Footer-->
 <div id="bottomBar">
