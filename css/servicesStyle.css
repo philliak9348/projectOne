@@ -4,6 +4,7 @@
     padding:10px;
     font-size:50px;
     color:white;
+    font-family:"Arial Black", Gadget, sans-serif;
 }
 #servicesSpecific {
     display:flex;
@@ -13,14 +14,17 @@
     width:100%;
     background-color:white;
     padding:10px;
-    height:400px;
+    height:auto;
+    margin-bottom:10px;
 }
 #servicesInfo {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
+    flex-grow:1;
     width:100%;
-    box-sizing:border-box
+    box-sizing:border-box;
+    margin-bottom:30px;
 }
 .serviceImage {
     height:80%;
@@ -33,6 +37,12 @@
     overflow:visible;
     padding:15px;
     height:100%;
+    margin:5px;
+    width:50%;
+}
+.infoTitle {
+    text-align:center;
+    font-family:"Arial Black", Gadget, sans-serif;
 }
 .bullet {
     padding:30px;
