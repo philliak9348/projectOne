@@ -2,19 +2,24 @@ body {
     overflow:scroll;
 }
 .title {
-    margin:auto;
+    font-family:"Arial Black", Gadget, sans-serif;
     padding:30px;
     text-align:center;
-    width:100%;
     align-content:center;
-    font-size:25px;
-    font-family:"Arial Black", Gadget, sans-serif;
-}
-#speecheasy {
     font-size: 5vw;
     padding:0;
-    margin:0;
     background-color:#F7B301;
+    width:80%;
+    margin:auto;
+}
+#tagline{
+    width:80%;
+    font-size:25px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-variant:small-caps;
+    margin:auto;
+    margin-bottom:25px;
+    text-align:center;
 }
 input {
     height:30px;
@@ -193,7 +198,10 @@ img {
 .addressPhone {
     text-align:center;
 }
-@keyframes pull {
-    from { left:-100%;}
-    to {left:0;}
+@media (max-width: 600px) {
+  .title {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
