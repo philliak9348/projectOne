@@ -6,12 +6,18 @@
     color:white;
     font-family:"Arial Black", Gadget, sans-serif;
 }
+.content {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom:50px;
+}
 .arrow {
     font-size:60px;
     font:bold;
-    background-color:#84D9F0;
     margin-left:10px;
     margin-right:10px;
+    background-color:#1966B0;
 }
 #servicesSpecific {
     background-color:#84D9F0;
@@ -20,10 +26,15 @@
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    height:auto;
+    height:1000px;
+    width:80%;
+    margin:auto;
 }
 .serviceImage {
-    height:80%;
+    box-sizing:border-box;
+    height:100%;
+    background-color:white;
+    padding:20px;
 }
 .info {
     padding:30px;
@@ -39,25 +50,29 @@
 .infoTitle {
     text-align:center;
     font-family:"Arial Black", Gadget, sans-serif;
+    font-size:30px;
 }
 #telepractice, #single, #group {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
-    margin:25px;
+    font-size:25px;
 }
 .infoLeft{
     position:absolute;
     right:-100%;
+    width:0;
+    overflow:hidden;
 }
 .infoCenter{
     margin:auto;
     align-content:center;
+    width:auto;
 }
 .infoRight{
-    position:absolute;
-    left:-100%;
+    width:0;
+    overflow:hidden;
 }
 .bullet {
     padding:30px;
