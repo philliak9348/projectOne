@@ -15,10 +15,18 @@
       service.classList.toggle("servicesClose");
       service.classList.toggle("servicesOpen");
     }
-    function toggleLogin() {
-        var popup = document.getElementById('signInPopup');
-        popup.classList.toggle('showPopup');
-        document.getElementById('loginForm').reset();
-        popup.classList.toggle('hidePopup');
-        document.getElementById('loginForm').reset();
+    var num = 0;
+    function togglePanelTest() {
+      var home = document.getElementById('homeButton');
+      var service = document.getElementById('navService');
+      var about = document.getElementById('aboutButton');
+      var contact = document.getElementById('contactButton');
+      home.classList.toggle('hiddenNavButton');
+      home.classList.toggle('navButton');
+      service.classList.toggle('hiddenNavButton');
+      service.classList.toggle('navButton');
+      about.classList.toggle('hiddenNavButton');
+      about.classList.toggle('navButton');
+      contact.classList.toggle('hiddenNavButton');
+      contact.classList.toggle('navButton');
     }

@@ -9,30 +9,35 @@
     <link rel="stylesheet" href="css/globalstyle.css">
 </head>
 <!-- Navigation Bar -->
-<ul id="nav" class = 'closedMenu'>
-    <li>
-        <button type = button id ='menuButton' onclick="togglePanel()">&#9776;</button>
-    </li>
-    <li>
-        <button type=button class='navButton' onclick="openFile('main.html')">Home</button>
-    </li>
-    <li class= 'navButton' id="navService">Services
-        <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
-        <ul class="dropdown">
-            <li><button class="dropService" onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
-            <li><button class="dropService" onclick="openFile('schoolage.html')">School-Age</button></li>
-            <li><button class="dropService" onclick="openFile('adult.html')">Adult</button></li>
-            <li><button class="dropService" onclick="openFile('senior.html')">Seniors</button></li>
-        </ul>
-    </li>
-    <li>
-        <button type=button class='navButton' onclick="openFile('about.html')">About</button>
-    </li>
-    <li>
-        <button type=button class='navButton' onclick="openFile('contact.html')">Contact</button>
-    </li>
-</ul>
-<div id="heading"> Services for Children Younger than School-Aged </div>
+<!--Header-->
+<div id="header">
+    <!--Title-->
+    <div class=title>Services for Children Younger than School-Aged</div>
+    <!-- Nav -->
+    <ul id="nav">
+        <li>
+            <button type = button id ='menuButton' onclick="togglePanelTest()">Menu</button>
+        </li>
+        <li>
+            <button type=button class='hiddenNavButton' id = "homeButton" onclick="openFile('main.html')">Home</button>
+        </li>
+        <li class="hiddenNavButton" id="navService">Services
+            <!--<button type=button class='pageButton' id = 'navService' onclick="openFile('about.html')">Services</button>-->
+            <ul class="dropdown">
+                <li><button class="dropService" onclick="openFile('beforeschool.html')">Birth to School-Age</button></li>
+                <li><button class="dropService" onclick="openFile('schoolage.html')">School-Age</button></li>
+                <li><button class="dropService" onclick="openFile('adult.html')">Adult</button></li>
+                <li><button class="dropService" onclick="openFile('senior.html')">Seniors</button></li>
+            </ul>
+        </li>
+        <li>
+            <button type=button class='hiddenNavButton' id = "aboutButton" onclick="openFile('about.html')">About</button>
+        </li>
+        <li>
+            <button type=button class='hiddenNavButton' id = "contactButton" onclick="openFile('contact.html')">Contact</button>
+        </li>
+    </ul>
+</div>
 <!--Services Images -->
 <div class="content">
     <button type="button" class="arrow" onclick="toggleInfoLeft()">&#60;</button>

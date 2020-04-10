@@ -1,60 +1,9 @@
 body {
     overflow:scroll;
 }
-.title {
-    width:80%;
-    margin:auto;
-    text-align:center;
-    font-family:"Arial Black", Gadget, sans-serif;
-}
-#speecheasy {
-    font-size: 30px;
-    background-color:#F7B301;
-}
-#tagline{
-    font-size:15px;
-    font-family:"Arial Black", Gadget, sans-serif;
-    width:80%;
-    margin:auto;
-    text-align:center;
-    margin-bottom:20px;
-}
 input {
     height:30px;
     width:150px;
-}
-#signInPopup {
-    font-family: 'Marvel';
-    position:fixed;
-    text-align:center;
-    right:50px;
-    top:150px;
-    height:300px;
-    width:250px;
-    border: black solid 3px;
-    background-color: #F7B301;
-    padding:15px;
-    font-size:25px;
-}
-#signInButtons {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-}
-#login, #cancel {
-    margin:10px;
-    font-family: 'Marvel';font-size: 25px;
-    height:30px;
-    width:80px;
-    border-left:solid black 3px;
-    border-right:solid black 3px;
-}
-.hidePopup {
-    visibility:hidden;
-    overflow:hidden;
-}
-.showPopup {
-    visibility:visible;
 }
 #content {
     display:flex;
@@ -63,6 +12,7 @@ input {
     justify-content: space-around;
     margin:auto;
     margin-bottom:100px;
+    margin-top:30px;
 }
 .outer {
     width:90%;
@@ -212,9 +162,6 @@ img {
        align-content:center;  }
     #contact {
         flex-direction: column-reverse;
-    }
-    #content{
-       margin-top:100px;
     }
     .servicesOpen {
         flex-wrap:wrap;

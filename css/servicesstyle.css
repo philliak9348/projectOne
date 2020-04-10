@@ -33,16 +33,21 @@
 .serviceImage {
     background-color:white;
 }
+li {
+    background-color:#F7B301;
+
+}
 .info {
     padding:30px;
     display:block;
-    background-color:white;
     overflow:auto;
     white-space:normal;
     overflow:visible;
     padding:15px;
     height:70%;
     width:50%;
+    background-color:white;
+
 }
 .infoTitle {
     text-align:center;

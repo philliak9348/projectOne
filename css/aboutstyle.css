@@ -9,15 +9,6 @@
 }
 #aboutContainer {
 }
-.aboutTitle {
-    font-size:50px;
-    font-variant:small-caps;
-    background-color:#F7B301;
-    padding:10px;
-    border-right:5px black solid;
-    border-left:5px black solid;
-    font-family:"Arial Black", Gadget, sans-serif;
-}
 #JordynandStaff {
     width:90%;
     display:flex;

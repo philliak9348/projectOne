@@ -2,14 +2,23 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
+    margin:0;
     scroll-padding:50px;
-    margin: 0;
-    margin-top:15px;
-    padding:0;
-    margin-top:30px;
     background-color:#1966B0;
     position:relative;
     scrolling-padding-bottom:0px 0 30ox 0px;
+}
+.header {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:30px;
+}
+.title {
+       text-align:center;
+       font-family:"Arial Black", Gadget, sans-serif;
+       font-size: 50px;
+       background-color:#F7B301;
+       padding:20px;
 }
 button {
     display:block;
@@ -22,37 +31,34 @@ button:hover {
     background-color:#e1e2e7;
 }
 #nav {
-    border:white solid 3px;
-    border-right:none;
+    width:80%;
+    margin:auto;
     list-style-type: none;
     display:flex;
     flex-direction:row;
-    height:80px;
-    background-color:#F7B301;
     justify-content:flex-start;
-    position:fixed;
-    top:0;
-    right:0;
+    border-top:3px white solid;
+    background-color:#F7B301;
 }
 .openMenu {
-    width:auto;
+    height:auto;
 }
 .closedMenu {
-    width:30px;
+    height:0;
     overflow:hidden;
 }
 li {
     font-size:15px;
     height:auto;
     border-left; 1px white solid;
-    background-color:#F7B301;
     margin:auto;
     text-align:center;
     color:white;
 }
 .navButton {
+    font-variant:small-caps;
+    visibility:visible;
     text-align:center;
-    background-color:#F7B301;
     border-left: 1px white solid;
     padding-left: 5px;
     color:white;
@@ -60,8 +66,14 @@ li {
     padding:10px;
     cursor:pointer;
     display:block;
+    background-color:#F7B301;
+}
+.hiddenNavButton{
+    visibility:hidden;
+    overflow:hidden;
 }
 #menuButton {
+    font-variant:small-caps;
     font-size:25px;
     background-color:#F7B301;
     color:white;
@@ -102,11 +114,11 @@ li {
     width:auto;
 }
 .dropService {
+    font-variant:small-caps;
     padding-top:3px;
-    margin:0;
     background-color:#F7B301;
     align-text:center;
-    padding:5px;
+    padding:10px;
     color:white;
     font-size:15px;
     width:auto;
@@ -135,10 +147,23 @@ li {
     width:5%;
     height:auto;
 }
-@media (max-width:600) {
+@media (max-width:600px) {
     #nav {
+        width:auto;
+    }
+    .navButton, #menuButton {
         font-size:15px;
-        wrap:normal;
+        width:auto;
+    }
+    .header {
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+    }
+    .title {
+        font-size:20px;
         height:auto;
+        width:auto;
     }
 }
