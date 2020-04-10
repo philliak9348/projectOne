@@ -79,3 +79,19 @@ figcaption {
     height:10%;
     width:auto;
 }
+@media (max-width:600px) {
+    .staffMember {
+        flex-direction:column;
+        justify-content: center;
+    }
+    .staffPic{
+        width:75%;
+    }
+    #JordynandStaff {
+        flex-direction:column;
+        justify-content:center;
+    }
+    .aboutBody{
+        line-height:30px;
+    }
+}

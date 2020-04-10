@@ -31,10 +31,7 @@
     margin:auto;
 }
 .serviceImage {
-    box-sizing:border-box;
-    width:70%;
     background-color:white;
-    padding:20px;
 }
 .info {
     padding:30px;
@@ -55,9 +52,10 @@
 #telepractice, #single, #group {
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
     align-items:center;
     font-size:25px;
+    box-sizing:border-box;
+    height:auto;
 }
 .infoLeft{
     position:absolute;
@@ -78,4 +76,9 @@
     padding:30px;
     margin:10px 0;
     height:50%;
+}
+@media (max-width: 600) {
+   .serviceImage {
+        width:50%;
+   }
 }

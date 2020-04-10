@@ -2,10 +2,14 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
+    scroll-padding:50px;
     margin: 0;
+    margin-top:15px;
+    padding:0;
     margin-top:30px;
     background-color:#1966B0;
     position:relative;
+    scrolling-padding-bottom:0px 0 30ox 0px;
 }
 button {
     display:block;
@@ -17,30 +21,29 @@ button {
 button:hover {
     background-color:#e1e2e7;
 }
-ul {
+#nav {
     border:white solid 3px;
     border-right:none;
     list-style-type: none;
     display:flex;
     flex-direction:row;
-    height:90px;
+    height:80px;
     background-color:#F7B301;
     justify-content:flex-start;
+    position:fixed;
+    top:0;
+    right:0;
 }
 .openMenu {
-    position:fixed;
-    right:0;
     width:auto;
 }
 .closedMenu {
-    position:fixed;
-    right:0;
     width:30px;
     overflow:hidden;
 }
 li {
-    font-size:1vw;
-    height:40px;
+    font-size:15px;
+    height:auto;
     border-left; 1px white solid;
     background-color:#F7B301;
     margin:auto;
@@ -53,7 +56,7 @@ li {
     border-left: 1px white solid;
     padding-left: 5px;
     color:white;
-    font-size:1vw;
+    font-size:15px;
     padding:10px;
     cursor:pointer;
     display:block;
@@ -64,6 +67,7 @@ li {
     color:white;
     border:none;
     padding-right:10px;
+    width:auto;
 }
 #navService {
     position:relative;
@@ -75,7 +79,7 @@ li {
     border-left: 1px white solid;
     padding-left: 5px;
     color:white;
-    font-size:1vw;
+    font-size:15px;
     padding:10px;
 }
 #navService:hover > .dropdown {
@@ -130,4 +134,11 @@ li {
 #emblem {
     width:5%;
     height:auto;
+}
+@media (max-width:600) {
+    #nav {
+        font-size:15px;
+        wrap:normal;
+        height:auto;
+    }
 }
