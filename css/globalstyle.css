@@ -157,6 +157,12 @@ li {
     height:auto;
     background-color:#F7B301;
 }
+a
+    { color: black;
+}
+#map{
+   height:10px;
+}
 #map:hover {
     background-color:#F7B301;
 }
