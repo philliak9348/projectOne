@@ -148,9 +148,6 @@ img {
     height:5%;
     width:5%;
 }
-.addressPhone {
-    text-align:center;
-}
 @media (max-width: 600px) {
     body{
         scroll-padding-top:70px;

@@ -6,7 +6,7 @@
       nav.classList.toggle("closedMenu");
     }
     function openFile(file) {
-      window.open(file);
+      window.open(file, "_self");
     }
     //Main Page script
     function toggleServices() {

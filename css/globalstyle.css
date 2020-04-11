@@ -142,10 +142,23 @@ li {
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
+    width:auto;
 }
-#emblem {
+.address{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.emblem {
+    align-content:center;
     width:5%;
     height:auto;
+    background-color:#F7B301;
+}
+#map:hover {
+    background-color:#F7B301;
 }
 @media (max-width:600px) {
     #nav {
